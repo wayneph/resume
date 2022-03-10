@@ -1,0 +1,9 @@
+version: '2'
+services:
+  php-apache-environment:
+    container_name: wayne
+    image: php:8.0-apache
+    volumes:
+      - ./code:/var/www/html/
+    ports:
+      - 8002:80
