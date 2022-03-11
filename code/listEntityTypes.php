@@ -14,20 +14,20 @@ class Present extends BL
         parent::__construct($this->myName);
         parent::executeAPICalls();
         parent::getHTML(); // gives $this->html - also does replaces
-        parent::validateAuthentication();
-        $formArray=parent::getArrayElement($this->pageArray['page']['elements'], "position_name", $this->pageArray['touchForm']);
-        $formHTML=$formArray['element_text'];
+        parent::buildEntityTypesMenu();
+        // $formArray=parent::getArrayElement($this->pageArray['page']['elements'], "position_name", $this->pageArray['touchForm']);
+        // $formHTML=$formArray['element_text'];
         $typesAccordionHTML=parent::buildEntityTypesAccordion($this->pageArray['entityTypes']);
-        $postsDetailCondition=parent::buildMessages($this->pageArray['messages']);
-        if($this->authenticated==0){
-            header("Location: index.php",301);
-            exit();
-        }
+        //$postsDetailCondition=parent::buildMessages($this->pageArray['messages']);
+        // if($this->authenticated==0){
+        //     header("Location: index.php",301);
+        //     exit();
+        // }
         /* assign values to page */
         $this->html=str_replace("###title###",$this->pageArray['page']['page']['title'],$this->html);
         $this->html=str_replace("###touchOptions###",$this->pageArray['touchOptions'],$this->html);
-        $this->html=str_replace("###postsDetailCondition###",$postsDetailCondition,$this->html);
-        $this->html=str_replace("###feedback###",$formHTML,$this->html);
+        //$this->html=str_replace("###postsDetailCondition###",$postsDetailCondition,$this->html);
+        //$this->html=str_replace("###feedback###",$formHTML,$this->html);
         $this->html=str_replace("###accordion###",$typesAccordionHTML,$this->html);
         $this->html=str_replace("###softMail###",$this->pageArray['emailText'],$this->html);
         $this->html=str_replace("###addedStyles###",$this->pageArray['page']['page']['styles_added'],$this->html);

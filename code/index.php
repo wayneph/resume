@@ -14,17 +14,17 @@ class Present extends BL
         // echo("<br>Array:pageArray(".__LINE__."({$this->myName}))<br><pre>"); print_r($this->pageArray); echo("</pre><hr>");
         // exit();
         parent::getHTML(); // gives $this->html - also does replaces
-        // parent::validateAuthentication();
+        parent::buildEntityTypesMenu();
         // $formArray=parent::getArrayElement($this->pageArray['page']['elements'], "position_name", $this->pageArray['touchForm']);
         // $formHTML=$formArray['element_text'];
         /* assign values to page */
         $this->html=str_replace("###title###",$this->pageArray['page']['page']['title'],$this->html);
-        $this->html=str_replace("###touchOptions###",$this->pageArray['touchOptions'],$this->html);
+        //$this->html=str_replace("###touchOptions###",$this->pageArray['touchOptions'],$this->html);
         //$this->html=str_replace("###theAppropriateForm###",$formHTML,$this->html);
-        $this->html=str_replace("###softMail###",$this->pageArray['emailText'],$this->html);
+        //$this->html=str_replace("###softMail###",$this->pageArray['emailText'],$this->html);
         $this->html=str_replace("###addedStyles###",$this->pageArray['page']['page']['styles_added'],$this->html);
-        $this->html=str_replace("###softSubMenus###",$this->addedMenu,$this->html);
-        $this->html=str_replace("###login###",$this->pageArray['authMessage'],$this->html);
+        $this->html=str_replace("###softMenu###",$this->addedMenu,$this->html);
+        //$this->html=str_replace("###login###",$this->pageArray['authMessage'],$this->html);
         //$this->html=str_replace("###emailAddress###",$this->pageArray['email'],$this->html);
         $this->html=str_replace("###personName###",$this->pageArray['person'],$this->html);
         $this->html=str_replace("###validUser###",$this->pageArray['validUser'],$this->html);

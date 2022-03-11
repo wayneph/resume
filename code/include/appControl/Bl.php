@@ -25,16 +25,16 @@ class BL
     public function __construct(string $pageName)
     {
         $this->getEnv();
-        $this->evalCookie();
+        //$this->evalCookie();
         if(isset($_SERVER['PATH_INFO'])){
             $this->getInfoPathArray($_SERVER['PATH_INFO']);
         }
         $this->pageArray['apiVars']['getPage']=$pageName;
-        $this->pageArray['touchForm']="loginForm";
-        $this->pageArray['touchOptions']="Register & Login Here";
-        $this->pageArray['authMessage']="Register or Login";
+        //$this->pageArray['touchForm']="loginForm";
+        //$this->pageArray['touchOptions']="Register & Login Here";
+        //$this->pageArray['authMessage']="Register or Login";
         $this->pageArray['apiCalls'][]='getPage';
-        //$this->pageArray['apiCalls'][]='getAllEntityTypes';
+        $this->pageArray['apiCalls'][]='getAllEntityTypes';
         //$this->pageArray['apiCalls'][]='getMessages';
         /* page specifics */
         switch ($pageName) {
@@ -174,17 +174,30 @@ class BL
         }
         return $outPutHtml;
     }
-    private function buildEntityTypesMenu()
+    public function buildEntityTypesMenu()
     {
         $array=$this->pageArray['entityTypes'];
         $menuLeader=getenv('siteMenuLeader');
         $itemsPerPage=getenv('defaultPageSize');
-        $this->addedMenu="\n<li><a href=\"listEntityTypes.php\"><span>$menuLeader<strong>&nbsp;&isin;</strong></span></a>\n<ul>\n";
+        /*
+
+
+                        <a href="#" class="icon fa-chart-bar"><span>Specifics</span></a>
+                        <ul>
+                            <li><a href="#">Lorem ipsum dolor</a></li>
+                            <li><a href="#">Magna phasellus</a></li>
+                            <li><a href="#">Etiam dolore nisl</a></li>
+                            <li><a href="#">Veroeros feugiat</a></li>
+                        </ul>
+
+        */
+
+        $this->addedMenu="\n<a href=\"listEntityTypes.php\" class=\"icon fa-chart-bar\"><span>$menuLeader<strong>&nbsp;&isin;</strong></span></a>\n<ul>\n";
         for($a=0;$a<count($array);$a++){
             $this->pageArray['getEntityTypes'][$a]['linkCode']=$array[$a]['slug']."/{$array[$a]['slug']}/1/$itemsPerPage";
             $this->addedMenu.="\n<li><a href=\"showEntitiesForType.php/{$array[$a]['slug']}/1/$itemsPerPage\">&#8714;&nbsp;{$array[$a]['selector']}</a></li>\n";
         }
-        $this->addedMenu.="\n</ul>\n</li>\n";
+        $this->addedMenu.="\n</ul>\n";
     }
     public function buildMessages(array $messages)
     {
