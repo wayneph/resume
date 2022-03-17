@@ -2,10 +2,9 @@
 
 ## Steps to create a PWA (Progressive Web App) like this ##
 0. Download or checkOut this repo:
-2. Get access to https://skunks.co from ###wayne.h.philip@protonmail.com### with Subject as : skunksMainAccessPlease
-    -- I will contact you and you will have access to the API / Data and other back-ends allowing for speedy development of a PWA
-
-3. create a .env with variables like in the env.examples.txt file under the <b>code</b> folder
+1. Get access to https://skunks.co from wayne.h.philip@protonmail.com with Subject as : **skunksMainAccessPlease**
+    -- I will contact you and you will have access to the **API** & **back Office Application**
+2. create a **.env** with variables like in the env.examples.txt file under the <b>code</b> folder
 ## You need to edit these files: ##
     ###   code/.env# - create from example.env.txt ###
     ###   code/manifest.json ###
