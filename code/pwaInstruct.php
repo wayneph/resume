@@ -14,12 +14,7 @@ class Present extends BL
         parent::buildEntityTypesMenu();
         $this->html=str_replace("###title###",$this->pageArray['page']['page']['title'],$this->html);
         $this->html=str_replace("###addedStyles###",$this->pageArray['page']['page']['styles_added'],$this->html);
-        $this->html=str_replace("###softSubMenus###",$this->addedMenu,$this->html);
-        $this->html=str_replace("###touchUs###","<!--..-->",$this->html);
-        $this->html=str_replace("###feedback###","<!--..-->",$this->html);
-        $this->html=str_replace("###myName###",$this->myName,$this->html);
-        $dBug=parent::setDebugger($this->pageArray['cookie']);
-        $this->html=str_replace("###debugger###",$dBug,$this->html);
+        $this->html=str_replace("###softMenu###",$this->addedMenu,$this->html);
         echo($this->html);
         parent::writeLogs();
     }

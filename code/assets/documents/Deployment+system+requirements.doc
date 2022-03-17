@@ -1,0 +1,505 @@
+Date: Thu, 17 Mar 2022 08:23:33 +0000 (UTC)
+Message-ID: <43453800.15.1647505413672@8cbdf54ce48f>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_14_169467112.1647505413671"
+
+------=_Part_14_169467112.1647505413671
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Deployment system requirements</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Deployment system requirements</h1>
+    <div class=3D"Section1">
+        <p>The following table provides guidelines for server sizing. Of pa=
+rticular note is the strong recommendation to avoid non-fixed performance C=
+PUs, or&nbsp;<em>Burstable CPU</em>&nbsp;in AWS terms, such as T-series ins=
+tances.</p>
+<h4 id=3D"Deploymentsystemrequirements-=C2=BBSizingforVaultservers"><a href=
+=3D"https://learn.hashicorp.com/tutorials/vault/reference-architecture#sizi=
+ng-for-vault-servers" class=3D"external-link" rel=3D"nofollow">=C2=BB</a>Si=
+zing for Vault servers</h4>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"703d6a32-9e8c-4abe-9f8b-f00=
+5cc7c1da9" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Size</p></th>
+<th class=3D"confluenceTh"><p>CPU</p></th>
+<th class=3D"confluenceTh"><p>Memory</p></th>
+<th class=3D"confluenceTh"><p>Disk</p></th>
+<th class=3D"confluenceTh"><p>Typical Cloud Instance Types</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Small</p></td>
+<td class=3D"confluenceTd"><p>2 core</p></td>
+<td class=3D"confluenceTd"><p>4-8 GB RAM</p></td>
+<td class=3D"confluenceTd"><p>25 GB</p></td>
+<td class=3D"confluenceTd"><p><strong>AWS:</strong>&nbsp;m5.large</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>Azure:</strong>&nbsp;Standard_D2_v3</=
+p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>GCE:</strong>&nbsp;n1-standard-2, n1-=
+standard-4</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Large</p></td>
+<td class=3D"confluenceTd"><p>4-8 core</p></td>
+<td class=3D"confluenceTd"><p>16-32 GB RAM</p></td>
+<td class=3D"confluenceTd"><p>50 GB</p></td>
+<td class=3D"confluenceTd"><p><strong>AWS:</strong>&nbsp;m5.xlarge, m5.2xla=
+rge</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>Azure:</strong>&nbsp;Standard_D4_v3, =
+Standard_D8_v3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>GCE:</strong>&nbsp;n1-standard-8, n1-=
+standard-16</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id=3D"Deploymentsystemrequirements-=C2=BBSizingforConsulservers"><a hre=
+f=3D"https://learn.hashicorp.com/tutorials/vault/reference-architecture#siz=
+ing-for-consul-servers" class=3D"external-link" rel=3D"nofollow">=C2=BB</a>=
+Sizing for Consul servers</h4>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"6d61f52c-9edf-4221-b4c8-784=
+f499f7950" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Size</p></th>
+<th class=3D"confluenceTh"><p>CPU</p></th>
+<th class=3D"confluenceTh"><p>Memory</p></th>
+<th class=3D"confluenceTh"><p>Disk</p></th>
+<th class=3D"confluenceTh"><p>Typical Cloud Instance Types</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Small</p></td>
+<td class=3D"confluenceTd"><p>2 core</p></td>
+<td class=3D"confluenceTd"><p>8-16 GB RAM</p></td>
+<td class=3D"confluenceTd"><p>50 GB</p></td>
+<td class=3D"confluenceTd"><p><strong>AWS:</strong>&nbsp;m5.large, m5.xlarg=
+e</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>Azure:</strong>&nbsp;Standard_D2_v3, =
+Standard_D4_v3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>GCE:</strong>&nbsp;n1-standard-4, n1-=
+standard-8</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Large</p></td>
+<td class=3D"confluenceTd"><p>4-8 core</p></td>
+<td class=3D"confluenceTd"><p>32-64+ GB RAM</p></td>
+<td class=3D"confluenceTd"><p>100 GB</p></td>
+<td class=3D"confluenceTd"><p><strong>AWS:</strong>&nbsp;m5.2xlarge, m5.4xl=
+arge</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>Azure:</strong>&nbsp;Standard_D4_v3, =
+Standard_D8_v3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><strong>GCE:</strong>&nbsp;n1-standard-16, n1=
+-standard-32</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"Deploymentsystemrequirements-=C2=BBHardwareconsiderations"><a hre=
+f=3D"https://learn.hashicorp.com/tutorials/vault/reference-architecture#har=
+dware-considerations" class=3D"external-link" rel=3D"nofollow">=C2=BB</a>Ha=
+rdware considerations</h3>
+<p>The small size category would be appropriate for most initial production=
+ deployments, or for development/testing environments.</p>
+<p>The large size is for production environments where there is a consisten=
+t high workload. That might be a large number of transactions, a large numb=
+er of secrets, or a combination of the two.</p>
+<p>In general, processing requirements will be dependent on encryption work=
+load and messaging workload (operations per second, and types of operations=
+). Memory requirements will be dependent on the total size of secrets/keys =
+stored in memory and should be sized according to that data (as should the =
+hard drive storage). Vault itself has minimal storage requirements, but the=
+ underlying storage backend should have a relatively high-performance hard =
+disk subsystem. If many secrets are being generated/rotated frequently, thi=
+s information will need to flush to disk often and can impact performance i=
+f slower hard drives are used.</p>
+<p>Consul servers function in this deployment is to serve as the storage ba=
+ckend for Vault. This means that all content stored for persistence in Vaul=
+t is encrypted by Vault, and written to the storage backend at rest. This d=
+ata is written to the key-value store section of Consul's Service Catalog, =
+which is required to be stored in its entirety in-memory on each Consul ser=
+ver. This means that memory can be a constraint in scaling as more clients =
+authenticate to Vault, more secrets are persistently stored in Vault, and m=
+ore temporary secrets are leased from Vault. This also has the effect of re=
+quiring vertical scaling on Consul server's memory if additional space is r=
+equired, as the entire Service Catalog is stored in memory on each Consul s=
+erver.</p>
+<p>Furthermore, network throughput is a common consideration for Vault and =
+Consul servers. As both systems are HTTPS API driven, all incoming requests=
+, communications between Vault and Consul, underlying gossip communication =
+between Consul cluster members, communications with external systems (per a=
+uth or secret engine configuration, and some audit logging configurations) =
+and responses consume network bandwidth.</p>
+<p>Due to network performance considerations in Consul cluster operations, =
+replication of Vault datasets across network boundaries should be achieved =
+through Performance or DR Replication, rather than spreading the Consul clu=
+ster across network and physical boundaries. If a single Consul cluster is =
+spread across network segments that are distant or inter-regional, this can=
+ cause synchronization issues within the cluster or additional data transfe=
+r charges in some cloud providers.</p>
+<h2 id=3D"Deploymentsystemrequirements-Systemrequirements">System requireme=
+nts</h2>
+<p>This section contains specific hardware capacity recommendations, networ=
+k requirements, and additional infrastructure considerations. Since every h=
+osting environment is different and every customer's Vault usage profile is=
+ different, these recommendations should only serve as a starting point fro=
+m which each customer's operations staff may observe and adjust to meet the=
+ unique needs of each deployment.</p>
+<h3 id=3D"Deploymentsystemrequirements-HardwaresizingforVaultservers">Hardw=
+are sizing for Vault servers</h3>
+<p>Sizing recommendations have been divided into two common cluster sizes.<=
+/p>
+<p><strong>Small</strong>&nbsp;clusters would be appropriate for most initi=
+al production deployments or for development and testing environments.</p>
+<p><strong>Large</strong>&nbsp;clusters are production environments with a =
+consistently high workload. That might be a large number of transactions, a=
+ large number of secrets, or a combination of the two.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"44c95f05-ad36-4802-967a-879=
+f059611cb" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 113.33px;">
+<col style=3D"width: 113.33px;">
+<col style=3D"width: 113.33px;">
+<col style=3D"width: 113.33px;">
+<col style=3D"width: 113.33px;">
+<col style=3D"width: 113.33px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Size</p></th>
+<th class=3D"confluenceTh"><p>CPU</p></th>
+<th class=3D"confluenceTh"><p>Memory</p></th>
+<th class=3D"confluenceTh"><p>Disk Capacity</p></th>
+<th class=3D"confluenceTh"><p>Disk IO</p></th>
+<th class=3D"confluenceTh"><p>Disk Throughput</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Small</p></td>
+<td class=3D"confluenceTd"><p>2-4 core</p></td>
+<td class=3D"confluenceTd"><p>8-16 GB RAM</p></td>
+<td class=3D"confluenceTd"><p>100+ GB</p></td>
+<td class=3D"confluenceTd"><p>3000+ IOPS</p></td>
+<td class=3D"confluenceTd"><p>75+ MB/s</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Large</p></td>
+<td class=3D"confluenceTd"><p>4-8 core</p></td>
+<td class=3D"confluenceTd"><p>32-64 GB RAM</p></td>
+<td class=3D"confluenceTd"><p>200+ GB</p></td>
+<td class=3D"confluenceTd"><p>10000+ IOPS</p></td>
+<td class=3D"confluenceTd"><p>250+ MB/s</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"Deploymentsystemrequirements-Hardwareconsiderations"><br>Hardware=
+ considerations</h3>
+<p>In general, CPU and storage performance requirements will depend on the =
+customer's exact usage profile (eg, types of requests, average request rate=
+, and peak request rate). Memory requirements depend on the total size of d=
+ata stored in memory and should be sized according to that data.</p>
+<p>When using integrated storage the Vault servers should have a relatively=
+ high-performance hard disk subsystem. If many secrets are being generated =
+or rotated frequently, this information will need to flush to disk often an=
+d the use of slower storage systems will significantly impact performance.<=
+/p>
+<h1 id=3D"Deploymentsystemrequirements-Refrences">Refrences</h1>
+<p><a href=3D"https://learn.hashicorp.com/tutorials/vault/raft-reference-ar=
+chitecture" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"=
+nofollow">https://learn.hashicorp.com/tutorials/vault/raft-reference-archit=
+ecture</a> </p>
+<p><a href=3D"https://learn.hashicorp.com/tutorials/vault/reference-archite=
+cture" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofol=
+low">https://learn.hashicorp.com/tutorials/vault/reference-architecture</a>=
+ </p>
+    </div>
+</body>
+</html>
+------=_Part_14_169467112.1647505413671--

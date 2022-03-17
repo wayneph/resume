@@ -390,7 +390,7 @@ input, select, textarea {
 		}
 
 			.row.gtr-0 > * {
-				padding: 0px 0 0 0px;
+				padding: 0 0 0 0;
 			}
 
 			.row.gtr-0.gtr-uniform {
@@ -425,6 +425,7 @@ input, select, textarea {
 
 			.row.gtr-50 > * {
 				padding: 25px 0 0 25px;
+				padding: 0em 0;
 			}
 
 			.row.gtr-50.gtr-uniform {
@@ -442,6 +443,7 @@ input, select, textarea {
 
 			.row > * {
 				padding: 50px 0 0 50px;
+				padding: 0em 0;
 			}
 
 			.row.gtr-uniform {
@@ -459,6 +461,7 @@ input, select, textarea {
 
 			.row.gtr-150 > * {
 				padding: 75px 0 0 75px;
+				padding: 0em 0;
 			}
 
 			.row.gtr-150.gtr-uniform {
@@ -476,6 +479,7 @@ input, select, textarea {
 
 			.row.gtr-200 > * {
 				padding: 100px 0 0 100px;
+				padding: 0em 0;
 			}
 
 			.row.gtr-200.gtr-uniform {
@@ -634,6 +638,7 @@ input, select, textarea {
 
 					.row.gtr-0 > * {
 						padding: 0px 0 0 0px;
+						padding: 0 0;
 					}
 
 					.row.gtr-0.gtr-uniform {
@@ -651,14 +656,17 @@ input, select, textarea {
 
 					.row.gtr-25 > * {
 						padding: 12.5px 0 0 12.5px;
+						padding: 0 0;
 					}
 
 					.row.gtr-25.gtr-uniform {
 						margin-top: -12.5px;
+						padding: 0 0;
 					}
 
 						.row.gtr-25.gtr-uniform > * {
 							padding-top: 12.5px;
+							padding: 0 0;
 						}
 
 				.row.gtr-50 {
@@ -668,6 +676,7 @@ input, select, textarea {
 
 					.row.gtr-50 > * {
 						padding: 25px 0 0 25px;
+						padding: 0 0;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -676,6 +685,7 @@ input, select, textarea {
 
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 25px;
+							padding: 0 0;
 						}
 
 				.row {
@@ -685,6 +695,7 @@ input, select, textarea {
 
 					.row > * {
 						padding: 50px 0 0 50px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-uniform {
@@ -702,6 +713,7 @@ input, select, textarea {
 
 					.row.gtr-150 > * {
 						padding: 75px 0 0 75px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-150.gtr-uniform {
@@ -710,6 +722,7 @@ input, select, textarea {
 
 						.row.gtr-150.gtr-uniform > * {
 							padding-top: 75px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-200 {
@@ -719,6 +732,7 @@ input, select, textarea {
 
 					.row.gtr-200 > * {
 						padding: 100px 0 0 100px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-200.gtr-uniform {
@@ -727,6 +741,7 @@ input, select, textarea {
 
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 100px;
+                            padding: 0 0;
 						}
 
 		}
@@ -913,6 +928,7 @@ input, select, textarea {
 
 					.row.gtr-50 > * {
 						padding: 20px 0 0 20px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -930,6 +946,7 @@ input, select, textarea {
 
 					.row > * {
 						padding: 40px 0 0 40px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-uniform {
@@ -947,6 +964,7 @@ input, select, textarea {
 
 					.row.gtr-150 > * {
 						padding: 60px 0 0 60px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-150.gtr-uniform {
@@ -955,6 +973,7 @@ input, select, textarea {
 
 						.row.gtr-150.gtr-uniform > * {
 							padding-top: 60px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-200 {
@@ -964,6 +983,7 @@ input, select, textarea {
 
 					.row.gtr-200 > * {
 						padding: 80px 0 0 80px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-200.gtr-uniform {
@@ -1124,6 +1144,7 @@ input, select, textarea {
 
 					.row.gtr-0 > * {
 						padding: 0px 0 0 0px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-0.gtr-uniform {
@@ -1132,6 +1153,7 @@ input, select, textarea {
 
 						.row.gtr-0.gtr-uniform > * {
 							padding-top: 0px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-25 {
@@ -1141,6 +1163,7 @@ input, select, textarea {
 
 					.row.gtr-25 > * {
 						padding: 12.5px 0 0 12.5px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-25.gtr-uniform {
@@ -1149,6 +1172,7 @@ input, select, textarea {
 
 						.row.gtr-25.gtr-uniform > * {
 							padding-top: 12.5px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-50 {
@@ -1158,6 +1182,7 @@ input, select, textarea {
 
 					.row.gtr-50 > * {
 						padding: 25px 0 0 25px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -1166,6 +1191,7 @@ input, select, textarea {
 
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 25px;
+                            padding: 0 0;
 						}
 
 				.row {
@@ -1175,6 +1201,7 @@ input, select, textarea {
 
 					.row > * {
 						padding: 50px 0 0 50px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-uniform {
@@ -1183,6 +1210,7 @@ input, select, textarea {
 
 						.row.gtr-uniform > * {
 							padding-top: 50px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-150 {
@@ -1192,6 +1220,7 @@ input, select, textarea {
 
 					.row.gtr-150 > * {
 						padding: 75px 0 0 75px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-150.gtr-uniform {
@@ -1200,6 +1229,7 @@ input, select, textarea {
 
 						.row.gtr-150.gtr-uniform > * {
 							padding-top: 75px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-200 {
@@ -1209,6 +1239,7 @@ input, select, textarea {
 
 					.row.gtr-200 > * {
 						padding: 100px 0 0 100px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-200.gtr-uniform {
@@ -1217,6 +1248,7 @@ input, select, textarea {
 
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 100px;
+                            padding: 0 0;
 						}
 
 		}
@@ -1403,6 +1435,7 @@ input, select, textarea {
 
 					.row.gtr-50 > * {
 						padding: 15px 0 0 15px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -1411,6 +1444,7 @@ input, select, textarea {
 
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 15px;
+                            padding: 0 0;
 						}
 
 				.row {
@@ -1420,6 +1454,7 @@ input, select, textarea {
 
 					.row > * {
 						padding: 30px 0 0 30px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-uniform {
@@ -1428,6 +1463,7 @@ input, select, textarea {
 
 						.row.gtr-uniform > * {
 							padding-top: 30px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-150 {
@@ -1437,6 +1473,7 @@ input, select, textarea {
 
 					.row.gtr-150 > * {
 						padding: 45px 0 0 45px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-150.gtr-uniform {
@@ -1445,6 +1482,7 @@ input, select, textarea {
 
 						.row.gtr-150.gtr-uniform > * {
 							padding-top: 45px;
+                            padding: 0 0;
 						}
 
 				.row.gtr-200 {
@@ -1454,6 +1492,7 @@ input, select, textarea {
 
 					.row.gtr-200 > * {
 						padding: 60px 0 0 60px;
+                        padding: 0 0;
 					}
 
 					.row.gtr-200.gtr-uniform {
@@ -1462,7 +1501,7 @@ input, select, textarea {
 
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 60px;
-						}
+                            padding: 0 0;
 
 		}
 
@@ -1608,6 +1647,7 @@ input, select, textarea {
 			padding-left: 0;
 			margin: 2.5em 0 0 0;
 			padding: 2.5em 0 0 0;
+            padding: 0 0;
 		}
 
 			ul.divided li:first-child {
@@ -1626,6 +1666,7 @@ input, select, textarea {
 		ul.icons > li {
 			position: relative;
 			padding: 2em 0 0 3em;
+            padding: 0 0;
 			margin: 0;
 		}
 
@@ -1911,6 +1952,7 @@ input, select, textarea {
 
 		#header > .container {
 			padding: 14em 0 7em 0;
+            padding: 0 0;
 			border-bottom: solid 2px #e5e5e5;
 			/* box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5; */
 		}
@@ -2069,6 +2111,7 @@ input, select, textarea {
 				border-top: 0;
 				padding-top: 0;
 			}
+
 			.dropotron li:hover > span, .dropotron li:hover > a {
 				-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
@@ -2076,38 +2119,45 @@ input, select, textarea {
 				transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				color: #ed786a;
 			}
+
 /* Features */
+
 	#features {
 		position: relative;
 		overflow: hidden;
 		background: #fff;
 		text-align: center;
 		padding: 6em 0;
-		padding: 1.5em 0;
+        padding: 0 0;
 	}
-	#features p {
-		text-align: center;
-		text-align: left;
-	}
-	#features ul.actions {
-		margin-top: 1.25em;
-	}
+
+		#features p {
+			text-align: center;
+		}
+
+		#features ul.actions {
+			margin-top: 1.25em;
+		}
+
 /* Banner */
-#banner {
-	position: relative;
-	overflow: hidden;
-	background: #fff;
-	color: #fff;
-	text-align: center;
-	border-top: solid 2px #e5e5e5;
-	border-bottom: solid 2px #e5e5e5;
-	box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
-	position: relative;
-	text-transform: uppercase;
-	background: url("../../images/banner.jpg");
-	background-size: cover;
-	padding: 10em 0;
-}
+
+	#banner {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		color: #fff;
+		text-align: center;
+		border-top: solid 2px #e5e5e5;
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
+		position: relative;
+		text-transform: uppercase;
+		background: url("../../images/banner.jpg");
+		background-size: cover;
+		padding: 10em 0;
+        padding: 0 0;
+	}
+
 		#banner p {
 			font-weight: 400;
 			font-size: 2em;
@@ -2116,49 +2166,59 @@ input, select, textarea {
 			text-align: center;
 			margin: 0;
 		}
+
 		#banner strong {
 			color: inherit;
 		}
+
 		#banner > .container {
 			position: relative;
 		}
-		#banner > .container:before, #banner > .container:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 50%;
-			width: 35px;
-			height: 141px;
-			margin-top: -70px;
-			background: url("images/bracket.svg");
-			opacity: 0.15;
-		}
-		#banner > .container:before {
-			left: 0;
-		}
-		#banner > .container:after {
-			-moz-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			-ms-transform: scaleX(-1);
-			transform: scaleX(-1);
-			right: 0;
-		}
+
+			#banner > .container:before, #banner > .container:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				width: 35px;
+				height: 141px;
+				margin-top: -70px;
+				background: url("images/bracket.svg");
+				opacity: 0.15;
+			}
+
+			#banner > .container:before {
+				left: 0;
+			}
+
+			#banner > .container:after {
+				-moz-transform: scaleX(-1);
+				-webkit-transform: scaleX(-1);
+				-ms-transform: scaleX(-1);
+				transform: scaleX(-1);
+				right: 0;
+			}
+
 /* Main */
-#main {
-	position: relative;
-	overflow: hidden;
-	background: rgba(255, 255, 255, 0.473);
-	padding: 6em 0;
-	padding: 0 0;
-}
+
+	#main {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		padding: 6em 0;
+        padding: 0 0;
+	}
+
 /* Content */
-#content > section,
-#content > article {
-	border-top: solid 2px #e5e5e5;
-	box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
-	margin: 5em 0 0 0;
-	padding: 5em 0 0 0;
-}
+
+	#content > section,
+	#content > article {
+		border-top: solid 2px #e5e5e5;
+		box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
+		margin: 5em 0 0 0;
+		padding: 5em 0 0 0;
+        padding: 0 0;
+	}
 
 		#content > section:first-child,
 		#content > article:first-child {
@@ -2176,6 +2236,7 @@ input, select, textarea {
 		box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
 		margin: 5em 0 0 0;
 		padding: 5em 0 0 0;
+        padding: 0 0;
 	}
 
 		#sidebar > section:first-child,
@@ -2194,6 +2255,7 @@ input, select, textarea {
 		border-top: solid 2px #e5e5e5;
 		background: #f0f0f0;
 		padding: 6em 0 8em 0;
+        padding: 0 0;
 	}
 
 		#footer form input[type="text"],
@@ -2265,6 +2327,7 @@ input, select, textarea {
 
 			#header > .container {
 				padding: 12em 0 5em 0;
+                padding: 0 0;
 			}
 
 			#header h1 {
@@ -2281,17 +2344,19 @@ input, select, textarea {
 
 			#features {
 				padding: 4em 0;
-				padding: 1em 0;
+				padding: 0 0;
 			}
 
 		/* Banner */
 
 			#banner {
 				padding: 8em 0;
+                padding: 0 0;
 			}
 
 				#banner > .container {
 					padding: 0 4em;
+                    padding: 0 0;
 				}
 
 					#banner > .container br {
@@ -2309,6 +2374,7 @@ input, select, textarea {
 
 			#footer {
 				padding: 4em 0;
+				padding: 0 0;
 			}
 
 		/* Copyright */
@@ -2338,6 +2404,7 @@ input, select, textarea {
 
 			#header > .container {
 				padding: 10em 0 7em 0;
+                padding: 0 0;
 			}
 
 		/* Nav */
@@ -2601,6 +2668,7 @@ input, select, textarea {
 
 			#header > .container {
 				padding: 6em 0 4em 0;
+				padding: 2em 0 2em 0;
 			}
 
 			#header h1 {
@@ -2618,6 +2686,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 5em 0;
+				padding: 2em 0;
 			}
 
 				#banner > .container {
@@ -2636,7 +2705,7 @@ input, select, textarea {
 
 			#features {
 				padding: 2em 0;
-				padding: 0em 0;
+				padding: 0 0;
 			}
 
 				#features ul.actions {
@@ -2647,6 +2716,7 @@ input, select, textarea {
 
 			#main {
 				padding: 2em 0;
+				padding: 0 0;
 			}
 
 		/* Content */
@@ -2655,6 +2725,7 @@ input, select, textarea {
 			#content > article {
 				margin: 3em 0 0 0;
 				padding: 3em 0 0 0;
+				padding: 0em 0;
 			}
 
 		/* Sidebar */
@@ -2667,12 +2738,14 @@ input, select, textarea {
 				#sidebar > article {
 					margin: 3em 0 0 0;
 					padding: 3em 0 0 0;
+					padding: 0em 0;
 				}
 
 		/* Footer */
 
 			#footer {
 				padding: 2em 0;
+				padding: 0em 0;
 			}
 
 				#footer ul.icons {

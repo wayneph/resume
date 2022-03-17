@@ -1,0 +1,595 @@
+Date: Thu, 17 Mar 2022 08:27:19 +0000 (UTC)
+Message-ID: <1620716338.71.1647505639342@9721ef3e1bb5>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_70_1871858706.1647505639342"
+
+------=_Part_70_1871858706.1647505639342
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Install and configure PostgreSQL</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Install and configure PostgreSQL</h1>
+    <div class=3D"Section1">
+        <p>INTRODUCTION</p>
+<p>Postgresql should be used for the storing of client information and rela=
+tional data where referential integrity and ACID compliance is required. Th=
+e following steps show you how to install a high-availability PostgreSQL da=
+tabase instance running in GKE as a service.</p>
+<p>BEFORE YOU BEGIN</p>
+<p>Make sure you=E2=80=99re connected to the cluster .</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+container clusters create "cluster-name" \
+&nbsp; --region "region-name" \
+&nbsp; --machine-type "machine-type-name" --disk-type "disk-type-value" --d=
+isk-size "int" \
+&nbsp; --node-locations "node-location"</pre>=20
+</div>
+</div>
+<h1 id=3D"InstallandconfigurePostgreSQL-Step1:InfrastructurePreparation"><s=
+trong>Step 1: Infrastructure Preparation</strong></h1>
+<p>We=E2=80=99ll start by deploying postgresql to our gke cluster, we=E2=80=
+=99ll create a file in the cluster (i.e psql.yaml), run <code>sudo nano psq=
+l.yaml</code> to access our file and edit then ^X,Y and enter to save chang=
+es, in our file we=E2=80=99ll have .</p>
+<ul>
+<li><p>config map</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">apiVers=
+ion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: mydb
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: Ayq#hf%hj</pre>=20
+</div>
+</div>
+<ul>
+<li><p>storage</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kind: P=
+ersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: postgres-pvc
+  labels:
+    app: postgres
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard</pre>=20
+</div>
+</div>
+<ul>
+<li><p>statefulset</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">apiVers=
+ion: apps/v1
+kind: Deployment
+metadata:
+ name: postgres
+spec:
+ strategy:
+   rollingUpdate:
+     maxSurge: 1
+     maxUnavailable: 1
+   type: RollingUpdate
+ replicas: 1
+ selector:
+   matchLabels:
+     app: postgres
+ template:
+   metadata:
+     labels:
+       app: postgres
+   spec:
+     containers:
+       - name: postgres
+         image: postgres:13
+         ports:
+           - containerPort: 5432
+         env:
+           - name: PGDATA
+             value: /var/lib/postgresql/data/pgdata
+         envFrom:
+            - configMapRef:
+                name: postgres-config
+         volumeMounts:
+           - mountPath: /var/lib/postgresql/data
+             name: postgredb
+     volumes:
+       - name: postgredb
+         persistentVolumeClaim:
+           claimName: postgres-pvc
+</pre>=20
+</div>
+</div>
+<ul>
+<li><p>service</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">apiVers=
+ion: v1
+kind: Service
+metadata:
+  name: postgres-service
+  labels:
+    app: postgres
+spec:
+  ports:
+  - port: 5432
+    name: postgres
+  type: NodePort=20
+  selector:
+    app: postgres</pre>=20
+</div>
+</div>
+<p>These configurations can be in a single yaml file (i.e psql.yaml) we can=
+ then apply our configurations by running.</p>
+<p><code>kubectl apply -f psql.yaml</code></p>
+<p>our output should be.</p>
+<p>configmap/postgres-config created<br>persistentvolumeclaim/postgres-pvc =
+created<br>deployment.apps/postgres created<br>service/postgres-service cre=
+ated</p>
+<p>run <code>kubectl get all</code></p>
+<p>to see the pods, services and pvc you have running.</p>
+<p></p>
+<h1 id=3D"InstallandconfigurePostgreSQL-Step2:MakingPostgreSQLHighlyAvailab=
+le"><strong>Step 2: Making PostgreSQL Highly Available</strong></h1>
+<p><em><strong>High availability (HA)</strong>&nbsp;is a characteristic of =
+a system, which aims to ensure an agreed level of operational performance, =
+usually uptime, for a higher than normal period.</em></p>
+<p>we=E2=80=99ll create a postgresql client, to remove single point failure=
+ possiblilites.</p>
+<p>We=E2=80=99ll simulate database instance failure</p>
+<ol>
+<li><p>Identify the node that is currently hosting PostgreSQL</p></li>
+</ol>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">CORDONE=
+D_NODE=3D`kubectl get pods -l app=3Dpostgres -o wide | grep -v NAME | awk '=
+{print $7}'`
+echo ${CORDONED_NODE}
+gcloud compute instances list --filter=3D"name=3D${CORDONED_NODE}"</pre>=20
+</div>
+</div>
+<p>2. Disable scheduling of any new pods on this node</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ cordon ${CORDONED_NODE}
+kubectl get nodes</pre>=20
+</div>
+</div>
+<p>3. Delete the existing PostgreSQL pod</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POD=3D`=
+kubectl get pods -l app=3Dpostgres -o wide | grep -v NAME | awk '{print $1}=
+'`
+kubectl delete pod ${POD}</pre>=20
+</div>
+</div>
+<p>4. Verify that a new pod is created on the other node</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ get pods -l app=3Dpostgres -o wide</pre>=20
+</div>
+</div>
+<p>5. Verify the node's zone</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">NODE=3D=
+`kubectl get pods -l app=3Dpostgres -o wide | grep -v NAME | awk '{print $7=
+}'`
+echo ${NODE}
+gcloud compute instances list --filter=3D"name=3D${NODE}"</pre>=20
+</div>
+</div>
+<p>6. Connect to the database instance</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POD=3D`=
+kubectl get pods -l app=3Dpostgres -o wide | grep -v NAME | awk '{print $1}=
+'`
+
+kubectl exec -it $POD -- psql -U postgres</pre>=20
+</div>
+</div>
+<p>7. Verify that the test dataset exists</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">\c gke_=
+test_regional;
+select * from test;
+\q</pre>=20
+</div>
+</div>
+<h1 id=3D"InstallandconfigurePostgreSQL-Step3:CreatingATestDataSet"><strong=
+>Step 3: Creating A Test DataSet</strong></h1>
+<ol>
+<li><p>Connect to your PostgreSQL instance:</p></li>
+</ol>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POD=3D`=
+kubectl get pods -l app=3Dpostgres -o wide | grep -v NAME | awk '{print $1}=
+'`
+
+kubectl exec -it $POD -- psql -U 'username' 'databasename'</pre>=20
+</div>
+</div>
+<p>Now we=E2=80=99re connected to the instance we can run test to see hoe p=
+ostgre inserts, updates and delete=E2=80=99s messages using SQL query, SQL =
+is short for Structured Query Language.SQL is used to perform all types of =
+data operations in relational database management systems (RDBMS).</p>
+<p>SQL is a powerful language where we can perform a wide range of operatio=
+ns:</p>
+<ul>
+<li><p>execute queries</p></li>
+<li><p>fetch data</p></li>
+<li><p>insert, update, and delete records in a database (DML operations)</p=
+></li>
+<li><p>create new objects in a database (DDL operations)</p></li>
+<li><p>set permissions on tables, procedures, functions, and views</p></li>
+<li><p>and much, much more...</p></li>
+</ul>
+<p>We=E2=80=99re going to create a table and insert some number=E2=80=99s i=
+nto it, The&nbsp;DELETE command&nbsp;is used to delete row(s). It can be us=
+ed with or without the optional WHERE condition, but take note: if the WHER=
+E condition is missing, the command will delete all rows, leaving you with =
+an empty table.</p>
+<ol>
+<li><p>CREATE TABLE QUERY IN POSTGRESQL</p></li>
+</ol>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">serikia=
+yodele@glukprsvmjb01:~$ kubectl exec -it $POD -- psql -U postgres mydb
+psql (13.3 (Debian 13.3-1.pgdg100+1))
+Type "help" for help.
+
+mydb=3D# create table dummy_table(name varchar(20),address text,age int);
+CREATE TABLE</pre>=20
+</div>
+</div>
+<p>2. INSERT QUERY</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">postgre=
+s=3D# insert into dummy_table values('FIRST','location-A',25);
+INSERT 0 1
+postgres=3D# insert into dummy_table values('SECOND','location-B',35);
+INSERT 0 1</pre>=20
+</div>
+</div>
+<p>3. SELECT QUERY</p>
+<p>we use the SELECT command to fetch all data from the database table.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">postgre=
+s=3D# select * from dummy_table;
+        name |  address   | age=20
+        ---------+--------------+ -----
+        FIRST | location-A |  25
+        SECOND| location-B |  35
+        (2 rows)</pre>=20
+</div>
+</div>
+<p>4. UPDATE QUERY</p>
+<p>we=E2=80=99ll update one of this values UPDATE command&nbsp;is used to m=
+ake updates to the data or row(s) of a database table</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">mydb=3D=
+# update dummy_table set name=3D'FIRST',age=3D54 where address=3D'location-=
+A';
+UPDATE 1
+postgres=3D# select * from dummy_table;
+        name |  address   | age=20
+        --------+--------------+-------
+        FIRST | location-A |  54
+        SECOND| location-B |  35
+        (2 rows)</pre>=20
+</div>
+</div>
+<p>If we want to modify all the values in the address and age columns in du=
+mmy_table, then we do not need to use the WHERE clause. The UPDATE query wo=
+uld look like this:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">postgre=
+s=3D# update dummy_table set age=3D54,address=3D'location-X';
+UPDATE 2
+postgres=3D# select * from dummy_table ;
+ name |  address   | age=20
+------+------------+--------
+ FIRST  | location-X |  54
+ SECOND | location-X |  54
+(2 rows)</pre>=20
+</div>
+</div>
+<p>5 DELETE QUERY</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">postgre=
+s=3D# delete from dummy_table where age=3D65;
+DELETE 1
+postgres=3D# </pre>=20
+</div>
+</div>
+<p></p>
+<p>REFERENCES</p>
+<p><a href=3D"https://cloud.google.com/architecture/deploying-highly-availa=
+ble-postgresql-with-gke#before-you-begin" data-card-appearance=3D"inline" c=
+lass=3D"external-link" rel=3D"nofollow">https://cloud.google.com/architectu=
+re/deploying-highly-available-postgresql-with-gke#before-you-begin</a> </p>
+<p><a href=3D"https://www.enterprisedb.com/postgres-tutorials/postgresql-qu=
+ery-introduction-explanation-and-50-examples" data-card-appearance=3D"inlin=
+e" class=3D"external-link" rel=3D"nofollow">https://www.enterprisedb.com/po=
+stgres-tutorials/postgresql-query-introduction-explanation-and-50-examples<=
+/a> </p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_70_1871858706.1647505639342--

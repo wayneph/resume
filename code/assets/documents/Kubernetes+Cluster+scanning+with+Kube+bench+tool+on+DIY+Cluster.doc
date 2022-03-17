@@ -1,0 +1,401 @@
+Date: Thu, 17 Mar 2022 08:52:49 +0000 (UTC)
+Message-ID: <322490053.59.1647507169458@43328590ef2e>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_58_133608547.1647507169458"
+
+------=_Part_58_133608547.1647507169458
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Kubernetes Cluster scanning with Kube bench tool on DIY Cluster<=
+/title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Kubernetes Cluster scanning with Kube bench tool on DIY Cluster</h1=
+>
+    <div class=3D"Section1">
+        <h2 id=3D"KubernetesClusterscanningwithKubebenchtoolonDIYCluster-Ho=
+wtouseKubebenchtoperformKubernetesscanning:">How&nbsp;to&nbsp;use&nbsp;Kube=
+bench&nbsp;to&nbsp;perform&nbsp;Kubernetes&nbsp;scanning:</h2>
+<p>Here we suggest irrelevant ways to perform kube bench test on the DIY cl=
+uster, which is a self managed kubernetes cluster.</p>
+<h3 id=3D"KubernetesClusterscanningwithKubebenchtoolonDIYCluster-Installing=
+fromacontainerandrunningtest">Installing from a container and running test<=
+/h3>
+<p>Run a container that installs kube-bench on the host, and then run kube-=
+bench directly on the host.</p>
+<ul>
+<li><p>ssh to the master node:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+compute ssh dev-k8-master-01</pre>=20
+</div>
+</div></li>
+<li><p>Execute the command:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">docker =
+run --rm -v `pwd`:/host aquasec/kube-bench:latest install</pre>=20
+</div>
+</div><p>This command above copies the kube-bench binary and configuration =
+files to your host from the Docker container.</p></li>
+</ul>
+<div id=3D"expander-1927021404" class=3D"expand-container">
+<div id=3D"expander-control-1927021404" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">kube-benc=
+h file is stored on host</span>
+</div>
+<div id=3D"expander-content-1927021404" class=3D"expand-content">
+<p>nacho@node1:~$ ls<br><strong>kube-bench</strong></p>
+</div>
+</div>
+<ul>
+<li><p>To perform the test simply run.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">./kube-=
+bench</pre>=20
+</div>
+</div></li>
+<li><p>The result displays on the terminal.</p></li>
+</ul>
+<h3 id=3D"KubernetesClusterscanningwithKubebenchtoolonDIYCluster-Runkube-be=
+nchfrominsideacontainer">Run kube-bench from inside a container</h3>
+<p>You can avoid installing kube-bench on the host by running it inside a c=
+ontainer using the host PID namespace and mounting the&nbsp;/etc&nbsp;and&n=
+bsp;/var&nbsp;directories where the configuration and other files are locat=
+ed on the host so that kube-bench can check their existence and permissions=
+.</p>
+<ul>
+<li><p>ssh to the master node:</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+compute ssh dev-k8-master-01</pre>=20
+</div>
+</div>
+<ul>
+<li><p>Execute the command:</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">docker =
+run --pid=3Dhost -v /etc:/etc:ro -v /var:/var:ro -t aquasec/kube-bench:late=
+st --version 1.21</pre>=20
+</div>
+</div>
+<ul>
+<li><p>The result displays on the terminal.</p></li>
+</ul>
+<h3 id=3D"KubernetesClusterscanningwithKubebenchtoolonDIYCluster-Runkubeben=
+chasajob">Run kube bench as a job</h3>
+<p>The <a href=3D"https://github.com/aquasecurity/kube-bench/blob/main/job.=
+yaml" class=3D"external-link" rel=3D"nofollow">job.yaml</a> file can be app=
+lied to run the tests as a job.</p>
+<ul>
+<li><p>Ssh to the bastion server.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+compute ssh dev-dr-bastion</pre>=20
+</div>
+</div></li>
+<li><p>Clone the GitHub kube-bench repo.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">git clo=
+ne https://github.com/aquasecurity/kube-bench.git
+kubectl apply -f kube-bench/job.yaml</pre>=20
+</div>
+</div><p>job.batch/kube-bench created</p></li>
+<li><p>Wait for a few seconds for the job to complete and corresponding pod=
+ will completed status.</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ get job</pre>=20
+</div>
+</div>
+<div id=3D"expander-1212183837" class=3D"expand-container">
+<div id=3D"expander-control-1212183837" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Expand to=
+ see an example</span>
+</div>
+<div id=3D"expander-content-1212183837" class=3D"expand-content">
+<p>nacho@dev-dr-bastion:~/tools$ kubectl get job<br>NAME COMPLETIONS DURATI=
+ON AGE<br>kube-bench 1/1 7s 41s<br>nacho@dev-dr-bastion:~/tools$ kubectl ge=
+t pods<br>NAME READY STATUS RESTARTS AGE<br>kube-bench-rhxjh 0/1 Completed =
+0 74s</p>
+</div>
+</div>
+<ul>
+<li><p>Review the result in the pod logs.</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ logs pod/'Name of kube-bench pod'</pre>=20
+</div>
+</div>
+<div id=3D"expander-1438227728" class=3D"expand-container">
+<div id=3D"expander-control-1438227728" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Expand to=
+ review kube bench results in pod logs of our last example</span>
+</div>
+<div id=3D"expander-content-1438227728" class=3D"expand-content">
+<p>nacho@dev-dr-bastion:~/tools$ kubectl logs pod/kube-bench-rhxjh<br>[INFO=
+] 2 Etcd Node Configuration<br>[INFO] 2 Etcd Node Configuration Files</p>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_58_133608547.1647507169458
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/976345cb5c45a9cd04afeb0463f22a9d
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_58_133608547.1647507169458--

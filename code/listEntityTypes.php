@@ -13,36 +13,18 @@ class Present extends BL
         $this->trace[]="({$this->myName}/php)::<b>".__METHOD__."</b>->Line::<b>".__LINE__."</b> @".date("H:i:s");
         parent::__construct($this->myName);
         parent::executeAPICalls();
-        parent::getHTML(); // gives $this->html - also does replaces
+        parent::getHTML();
         parent::buildEntityTypesMenu();
-        // $formArray=parent::getArrayElement($this->pageArray['page']['elements'], "position_name", $this->pageArray['touchForm']);
-        // $formHTML=$formArray['element_text'];
-        $typesAccordionHTML=parent::buildEntityTypesAccordion($this->pageArray['entityTypes']);
-        //$postsDetailCondition=parent::buildMessages($this->pageArray['messages']);
-        // if($this->authenticated==0){
-        //     header("Location: index.php",301);
-        //     exit();
-        // }
-        /* assign values to page */
+        $typesList=parent::buildEntityTypes();
         $this->html=str_replace("###title###",$this->pageArray['page']['page']['title'],$this->html);
-        $this->html=str_replace("###touchOptions###",$this->pageArray['touchOptions'],$this->html);
-        //$this->html=str_replace("###postsDetailCondition###",$postsDetailCondition,$this->html);
-        //$this->html=str_replace("###feedback###",$formHTML,$this->html);
-        $this->html=str_replace("###accordion###",$typesAccordionHTML,$this->html);
-        $this->html=str_replace("###softMail###",$this->pageArray['emailText'],$this->html);
         $this->html=str_replace("###addedStyles###",$this->pageArray['page']['page']['styles_added'],$this->html);
-        $this->html=str_replace("###softSubMenus###",$this->addedMenu,$this->html);
-        $this->html=str_replace("###login###",$this->pageArray['authMessage'],$this->html);
-        $this->html=str_replace("###emailAddress###",$this->pageArray['email'],$this->html);
-        $this->html=str_replace("###personName###",$this->pageArray['person'],$this->html);
-        $this->html=str_replace("###validUser###",$this->pageArray['validUser'],$this->html);
-        $this->html=str_replace("###logoutText###",$this->pageArray['logoutText'],$this->html);
+        $this->html=str_replace("###softMenu###",$this->addedMenu,$this->html);
+        $this->html=str_replace("###entitiesList###",$typesList,$this->html);
         $this->html=str_replace("###myName###",$this->myName,$this->html);
         $this->html=str_replace("###scriptAdded###","",$this->html);
-        $dBug=parent::setDebugger($this->pageArray['cookie']);
-        $this->html=str_replace("###debugger###",$dBug,$this->html);
         echo($this->html);
         parent::writeLogs();
+        exit();
     }
 }
 new Present;

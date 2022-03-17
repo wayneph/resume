@@ -1,0 +1,648 @@
+Date: Thu, 17 Mar 2022 08:25:45 +0000 (UTC)
+Message-ID: <1629522983.55.1647505545752@43328590ef2e>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_54_1578361492.1647505545751"
+
+------=_Part_54_1578361492.1647505545751
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Ansible Generic Scripts (Bare Metal)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Ansible Generic Scripts (Bare Metal)</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"AnsibleGenericScripts(BareMetal)-Requirements/Prerequisit=
+es">Requirements / Prerequisites </h1>
+<p>This guide assumes that you have a few things in place already, which ar=
+e:</p>
+<ol>
+<li><p>Servers Networking</p>
+<ol>
+<li><p>have functional local networking</p></li>
+<li><p>You have your /22 ranges already planned out for your Kubernetes env=
+ironments (Refence to be added to this guide) </p></li>
+<li><p>Note on Kubernetes /22 ranges - this is not a production best practi=
+se. This was a work around so we could use the proxy internet for the requi=
+red <strong>no_proxy </strong>limitation in bash</p></li>
+</ol></li>
+<li><p>Servers have internet access </p>
+<ol>
+<li><p>Direct recommended or </p></li>
+<li><p>Internet proxy (4C estate has this enabled on the kubernetes environ=
+ments) </p></li>
+</ol></li>
+<li><p>Docker repositories is setup already - Rancher RKE uses docker to bu=
+ild a cluster</p>
+<ol>
+<li><p>Note on this: Because we would have to cater for various OS=E2=80=99=
+s it was decided to just make sure it is already there. The ansible will do=
+ the rest. </p></li>
+</ol></li>
+<li><p>Python 3 installed</p>
+<ol>
+<li><p>Python 3 installed </p></li>
+<li><p>Python PIP3 installed </p></li>
+</ol></li>
+<li><p>Servers needed (this keeps changing so it is not final yet)</p>
+<ol>
+<li><p>bastion server (jump box) - use for all ansible / kubernetes operati=
+ons</p></li>
+<li><p>3 x Master Nodes</p></li>
+<li><p>3 x Worker Nodes</p></li>
+<li><p>3 x Storage nodes</p></li>
+<li><p>1 x monitoring nodes</p></li>
+</ol></li>
+<li><p>Ansible Inventory</p>
+<ol>
+<li><p>You need to setup an ansible inventory - this requires knowledge of =
+ansible </p></li>
+</ol></li>
+<li><p>Install SSH pass on bastion server</p>
+<ol>
+<li><p>yum install sshpass -y</p></li>
+</ol></li>
+</ol>
+<p></p>
+<h1 id=3D"AnsibleGenericScripts(BareMetal)-Predefined/22internalnetworkrang=
+ersforkubernetes">Predefined /22 internal network rangers for kubernetes </=
+h1>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"51a22e4e-fcd7-456e-bf13-e3f=
+ca75c0ec1" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 204.0px;">
+<col style=3D"width: 302.0px;">
+<col style=3D"width: 253.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Environment </strong></p></th>
+<th class=3D"confluenceTh"><p><strong>K8 Internal IP Range 1</strong></p></=
+th>
+<th class=3D"confluenceTh"><p><strong>K8 Internal IP Range 2</strong></p></=
+th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>DEV01</p></td>
+<td class=3D"confluenceTd"><p>10.42.0.0/22</p></td>
+<td class=3D"confluenceTd"><p>10.43.0.0/22</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>DEV03</p></td>
+<td class=3D"confluenceTd"><p>10.46.0.0/22</p></td>
+<td class=3D"confluenceTd"><p>10.47.0.0/22</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>DEV04</p></td>
+<td class=3D"confluenceTd"><p>10.48.0.0/22</p></td>
+<td class=3D"confluenceTd"><p>10.49.0.0/22</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"AnsibleGenericScripts(BareMetal)-SteptobuildaKubernetesClusterfro=
+mscratch">Step to build a Kubernetes Cluster from scratch</h1>
+<p>Initial setup requires root user to be active and working via SSH. Once =
+the setup is completed you can run the base-line / hardening scripts on the=
+ servers - NOT before.</p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step1-PrepareBastionUser">Step 1=
+ - Prepare Bastion User</h2>
+<p></p>
+<p>Before creating the user as root setup the proxy internet access</p>
+<p>For 4C infrastructure (or client) Internet access. Because the server do=
+es not have internet setup yet via ansible it has to be added manually init=
+ially - Not required if you have internet access. This is an example for a =
+proxy setup</p>
+<p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence"> echo '=
+# /22 subnets
+export iproxy4c=3D"http://proxy.4cgroup.co.za:8080"
+export http_proxy=3D$iproxy4c
+export HTTP_PROXY=3D$http_proxy
+export https_proxy=3D$iproxy4c
+export HTTPS_PROXY=3D$https_proxy
+export BITBUCKET=3D"104.192.141.1"
+printf -v unixlan '%s,' 172.16.36.{1..253}
+printf -v kubenet1 '%s,' 10.42.{1..3}.{1..253}
+printf -v kubenet2 '%s,' 10.43.{1..3}.{1..253}
+printf -v kubenet3 '%s,' 10.44.{1..3}.{1..253}
+printf -v kubenet4 '%s,' 10.45.{1..3}.{1..253}
+printf -v kubenet5 '%s,' 10.46.{1..3}.{1..253}
+printf -v kubenet6 '%s,' 10.47.{1..3}.{1..253}
+printf -v kubenet7 '%s,' 10.48.{1..3}.{1..253}
+printf -v kubenet8 '%s,' 10.49.{1..3}.{1..253}
+printf -v kubenet9 '%s,' 10.50.{1..3}.{1..253}
+printf -v kubenet10 '%s,' 10.51.{1..3}.{1..253}
+export no_proxy=3D"${unixlan%,},${kubenet1%,},${kubenet2%,},${kubenet3%,},$=
+{kubenet4%,},${kubenet5%,},${kubenet6%,},${kubenet7%,}${kubenet8%,}${kubene=
+t9%,}${kubenet10%,},$BITBUCKET,4cgroup.co.za,127.0.0.1";
+export NO_PROXY=3D$no_proxy
+' &gt; /etc/profile.d/_proxy.sh</pre>=20
+</div>
+</div>
+<p></p>
+<p>As the ROOT user, make sure sshpass installed (bastion only)</p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Why do we need this? Ansible will needs this to initially login to other=
+ systems with SSH</p>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">yum -y =
+install sshpass</pre>=20
+</div>
+</div>
+<p>Log into the bastion server as <strong>root</strong> and create the mast=
+er shell kubernetes user. All scripts use <strong>kube4c </strong>so make s=
+ure the <strong>kube4c </strong>user exists. </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">adduser=
+ kube4c</pre>=20
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Generally we don't want to set a password or use password on the account=
+. SSH keys only! </p>
+<p>But if that becomes a problem, choose a random 60 digit password from a =
+password generator and set it. </p>
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-not=
+e">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Next become the kube4c user. From this point on all commands must be run=
+ as the kube4c user so nothing is setup using a privileged account e.g. roo=
+t </p>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">su - ku=
+be4c</pre>=20
+</div>
+</div>
+<p>Next we are going to create a default SSH key that is going to be distri=
+buted later to all nodes so we can easily SSH to the nodes in your cluster =
+from the master user. This is also used by by the rancher binary for initia=
+l connection and image downloading</p>
+<p>Accept all defaults and press enter on everything </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">ssh-key=
+gen</pre>=20
+</div>
+</div>
+<p>Next make sure you have a copy of the GIT Repository from <a href=3D"htt=
+ps://infragit.4cgroup.co.za/pretoriusr/insightv2-kubernetes" class=3D"exter=
+nal-link" rel=3D"nofollow">pretoriusr/insightv2-kubernetes: Kubernetes rela=
+ted repository - INFRAGIT (4cgroup.co.za)</a></p>
+<p>If not inside the 4C network you would have to copy the repository manua=
+lly using SCP or some other method. If inside 4C=E2=80=99s network you can =
+do the following:</p>
+<p>Get the public SSH key and add it to the infra git repository named <str=
+ong>insightv2-kubernetes</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cat ~/.=
+ssh/id_rsa.pub</pre>=20
+</div>
+</div>
+<p>Once added you can do a git clone to get a copy:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+git clone gogsgit@infragit.4cgroup.co.za:pretoriusr/insightv2-kubernetes.gi=
+t</pre>=20
+</div>
+</div>
+<p></p>
+<p>Now you have a copy of all the tools / playbooks used to setup and confi=
+gure a kubernetes cluster. But we still need ansible to be installed. We do=
+n=E2=80=99t want to use the OS installed ansible since it is easier to use =
+a non-privileged user to do everything. So lets install ansible and all the=
+ dependency modules </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd insi=
+ghtv2-kubernetes/ansible
+pip3 install -r ansible_pip3_install.txt --user</pre>=20
+</div>
+</div>
+<p>This takes a few minutes to download / install / compile everything it n=
+eeds. Once done proceed to next step</p>
+<p></p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step2-SetupBastionServer">Step 2=
+ - Setup Bastion Server</h2>
+<p>prepare the bastion server (jump box) so it can be used as a jump box. Y=
+ou will be asked the root password </p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>In this example setup our inventory file is called <strong>inv_poc01.yml=
+</strong></p>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/ansible
+ansible-playbook -i inv_poc01.yml playbooks/bootstrap/bastion-bootstrap-0-P=
+repare.yml --extra-vars "IDPubKey=3D~/.ssh/id_rsa.pub" --user root --ask-pa=
+ss</pre>=20
+</div>
+</div>
+<p>Once the playbook has completed you can proceed to step 3</p>
+<p></p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step3-DistributeSSHkeys">Step 3 =
+- Distribute SSH keys</h2>
+<p>Next we are preparing the nodes and distributing the SSH key from the ba=
+stion server to all nodes </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/ansible
+ansible-playbook -i inv_poc01.yml playbooks/bootstrap/node-bootstrap-1-Setu=
+pAnsibleUser.yml --ask-pass --extra-vars "ansible_user=3Droot" --extra-vars=
+ "IDPubKey=3D~/.ssh/id_rsa.pub"</pre>=20
+</div>
+</div>
+<p></p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step4-Preparedockerengine">Step =
+4 - Prepare docker engine </h2>
+<p>Next we are preparing the nodes for the docker engine operation. This wi=
+ll also reboot all nodes to make sure settings are applied </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/ansible
+ansible-playbook -i inv_poc01.yml playbooks/bootstrap/node-bootstrap-2-Setu=
+pDockerEngine.yml</pre>=20
+</div>
+</div>
+<p></p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step5-Applyinternetproxysettings=
+">Step 5 - Apply internet proxy settings</h2>
+<p>Apply internet settings to docker engine and OS - this is an example onl=
+y change as needed for customer environments</p>
+<p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/ansible
+ansible-playbook -i inv_poc01.yml playbooks/bootstrap/node-bootstrap-3-Setu=
+pOSInternetProxy-ExampleONLY.yml</pre>=20
+</div>
+</div>
+<p></p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step6-Installprivatedockerreposi=
+toriesSSLcerts">Step 6 - Install private docker repositories SSL certs</h2>
+<p>At some point we are going to move to the GCP docker registry - But for =
+now you can install the following SSL certs to make the local docker regist=
+ry work</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/ansible
+ansible-playbook -i inv_poc01.yml playbooks/setup-docker-registry/deploy-ca=
+-registry-cert.yml --extra-vars "RegistryCACert=3D~/insightv2-kubernetes/an=
+sible/playbooks/setup-docker-registry/4c-docker-registry.crt"</pre>=20
+</div>
+</div>
+<p>The playbook will install the SSL certs and reboot servers</p>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step7-SetupRKEKubernetescluster"=
+>Step 7 - Setup RKE Kubernetes cluster </h2>
+<p>Rancher RKE - There is a playbook for this but is currently not yet prod=
+uction ready, but still a good exercise for a manual setup. Inside the ranc=
+her-cluster directory is where all the environments configuration files are=
+ stored e.g.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">drwxr-x=
+--- 2 kube4c kube4c 126 Jan  4 12:43 cluster-dev01
+drwxr-x--- 2 kube4c kube4c  80 Jan  4 12:43 cluster-dev03
+drwxr-x--- 2 kube4c kube4c  80 Jan  4 12:43 cluster-dev04
+drwxr-x--- 2 kube4c kube4c  80 Jan  4 13:45 cluster-poc01</pre>=20
+</div>
+</div>
+<p>This guide does not explain the setup of that file. But you are welcome =
+to view any of them to get an idea of what is going on and how to configure=
+ it.</p>
+<p>Since we are setting up cluster-poc01 as the example got to that directo=
+ry</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/rancher-cluster/cluster-poc01</pre>=20
+</div>
+</div>
+<p>Next run the RKE tool and the build will start </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">rke up<=
+/pre>=20
+</div>
+</div>
+<p>Wait about 5-7 minutes for the build to complete. If there is any errors=
+ please confirm your docker repository access and/or internet access </p>
+<p></p>
+<p>Manual step to install the kubectl SSL configuration file to the kube4c =
+user so kubectl works </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">mkdir  =
+~/.kube/
+cp kube_config_cluster.yml ~/.kube/config
+kubectl get pods -owide -A</pre>=20
+</div>
+</div>
+<h2 id=3D"AnsibleGenericScripts(BareMetal)-Step8-4CKubernetesCustomizations=
+">Step 8 - 4C Kubernetes Customizations</h2>
+<p>This step is the 4C customization settings that is being applied for the=
+ cluster. This also install ARGOCD for you so it is ready for deployment </=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/k8_configurations/
+ansible-playbook k8_InsightV2_Post_Actions.yml</pre>=20
+</div>
+</div>
+<p>Once all of that actions are completed we need to setup rook-ceph</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">cd
+cd insightv2-kubernetes/k8_configurations/
+ansible-playbook k8_InsightV2_Post_Actions_Storage.yml</pre>=20
+</div>
+</div>
+<p> </p>
+<p>Now wait for the system to fully deploy takes anything from 5 mins to 40=
+ mins depending on infrastructure speed </p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence"> watch =
+kubectl get pods -owide -n rook-ceph</pre>=20
+</div>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_54_1578361492.1647505545751--

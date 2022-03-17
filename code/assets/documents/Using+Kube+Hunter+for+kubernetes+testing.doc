@@ -1,0 +1,498 @@
+Date: Thu, 17 Mar 2022 08:54:00 +0000 (UTC)
+Message-ID: <365104898.47.1647507240309@861bbb5c31c3>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_46_532586103.1647507240308"
+
+------=_Part_46_532586103.1647507240308
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Using Kube Hunter for kubernetes testing</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Using Kube Hunter for kubernetes testing</h1>
+    <div class=3D"Section1">
+        <p>Running a kube-hunter test on your cluster will show you what th=
+e attackers are seeing and how to fix the problem. </p>
+<h2 id=3D"UsingKubeHunterforkubernetestesting-Kube-hunterScanningoptions"><=
+strong>Kube-hunter Scanning options</strong></h2>
+<p>There are three scanning options to run kube-hunter:</p>
+<ol>
+<li><p>Remote scanning (scans one or more specific IPs or DNS names)</p></l=
+i>
+<li><p>Interface scanning (scans subnets on all local network interfaces)</=
+p></li>
+<li><p>IP range scanning (scans a given IP range)</p></li>
+</ol>
+<h2 id=3D"UsingKubeHunterforkubernetestesting-Runningkube-hunterasacontaine=
+r"><strong>Running kube-hunter as a container</strong></h2>
+<p>Aqua Security maintains a containerized version of kube-hunter at <code>=
+aquasec/kube-hunter</code>.</p>
+<p>We could either run:</p>
+<ul>
+<li><p>Run container with reporting plugin for uploading results into a rep=
+ort that can be viewed at <a href=3D"https://kube-hunter.aquasec.com" class=
+=3D"external-link" rel=3D"nofollow">kube-hunter.aquasec.com</a>.</p></li>
+<li><p>Run container without the reporting plugin</p></li>
+</ul>
+<h3 id=3D"UsingKubeHunterforkubernetestesting-Stepstorunkube-hunterasaconta=
+iner(withoutreportingplugin)">Steps to run kube-hunter as a container (with=
+out reporting plugin)</h3>
+<p>The steps to set up kube-hunter are as follows:</p>
+<ol>
+<li><p>Connect to the server.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+compute ssh dev-k8-master-01</pre>=20
+</div>
+</div></li>
+<li><p>Run kube-hunter container with the host network, it will be able to =
+probe all the interfaces on the host:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">docker =
+run -it --rm --network host aquasec/kube-hunter</pre>=20
+</div>
+</div></li>
+<li><p>Choose a scanning options: Lets say we choose option 1:</p></li>
+</ol>
+<div id=3D"expander-581044844" class=3D"expand-container">
+<div id=3D"expander-control-581044844" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Choose on=
+e of the options below:</span>
+</div>
+<div id=3D"expander-content-581044844" class=3D"expand-content">
+<ol>
+<li><p>Remote scanning (scans one or more specific IPs or DNS names)</p></l=
+i>
+<li><p>Interface scanning (scans subnets on all local network interfaces)</=
+p></li>
+<li><p>IP range scanning (scans a given IP range)</p></li>
+</ol>
+</div>
+</div>
+<p>4. Then we need to enter the private IP address of the server. This can =
+be retrieved with the below command</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">hostnam=
+e -I|awk '{print $1}'</pre>=20
+</div>
+</div>
+<p>5. Scan result displays on the terminal</p>
+<h3 id=3D"UsingKubeHunterforkubernetestesting-Stepstorunkube-hunterasaconta=
+iner(withreportingplugin)">Steps to run kube-hunter as a container (with re=
+porting plugin)</h3>
+<p>The steps to set up kube-hunter are as follows:</p>
+<ol>
+<li><p>Connect to the server.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+compute ssh dev-k8-master-01</pre>=20
+</div>
+</div></li>
+<li><p>At the <a href=3D"https://kube-hunter.aquasec.com" class=3D"external=
+-link" rel=3D"nofollow">kube-hunter site</a>, enter your email address and =
+you=E2=80=99ll get a Docker command to run that <strong>includes a token.</=
+strong></p></li>
+<li><p>Copy that command and run it on your node. You=E2=80=99ll be prompte=
+d for the address of the cluster to test against.</p></li>
+<li><p>Run kube-hunter container with the host network, it will be able to =
+probe all the interfaces on the host:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">docker =
+run -it --rm --network host aquasec/kube-hunter '&lt;&lt;secret token&gt;&g=
+t;'</pre>=20
+</div>
+</div></li>
+<li><p>Choose a scanning options:</p></li>
+</ol>
+<div id=3D"expander-404758673" class=3D"expand-container">
+<div id=3D"expander-control-404758673" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Choose on=
+e of the options below:</span>
+</div>
+<div id=3D"expander-content-404758673" class=3D"expand-content">
+<ol>
+<li><p>Remote scanning (scans one or more specific IPs or DNS names)</p></l=
+i>
+<li><p>Interface scanning (scans subnets on all local network interfaces)</=
+p></li>
+<li><p>IP range scanning (scans a given IP range)</p></li>
+</ol>
+<p><strong>Your choice: 1</strong><br>Remotes (separated by a ','): 10.240.=
+0.2<br>2021-08-24 09:23:40,714 INFO kube_hunter.modules.report.collector St=
+arted hunting</p>
+<p>Report will be available at:<br>+---------------------------------------=
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+------------------------------------------------------+<br>| <a href=3D"htt=
+ps://kube-hunter.aquasec.com/report.html?token=3DeyJ0eXAiOiJKV1QiLCJhbGciOi=
+JIUzI1NiJ9.eyJ0aW1lIjoxNjI5Nzk2MzczLjUxMzU4NTYsImVtYWlsIjoiaWhlYW5hY2hvLmNo=
+dWt3dUBkZWltb3MuY28uemEiLCJyIjoiOTRlNTU1ODMifQ.sURJxJagxxr_9ysUAiX-cgVwvACI=
+_pUdEWpL5wVVGbU" class=3D"external-link" rel=3D"nofollow">https://kube-hunt=
+er.aquasec.com/report.html?token=3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ=
+0aW1lIjoxNjI5Nzk2MzczLjUxMzU4NTYsImVtYWlsIjoiaWhlYW5hY2hvLmNodWt3dUBkZWltb3=
+MuY28uemEiLCJyIjoiOTRlNTU1ODMifQ.sURJxJagxxr_9ysUAiX-cgVwvACI_pUdEWpL5wVVGb=
+U</a> |<br>+---------------------------------------------------------------=
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+------------------------------+</p>
+<p>2021-08-24 09:23:40,728 INFO kube_hunter.modules.report.collector Discov=
+ering Open Kubernetes Services<br>2021-08-24 09:23:40,759 INFO kube_hunter.=
+modules.report.collector Found open service "Etcd" at 10.240.0.2:2379<br>20=
+21-08-24 09:23:40,834 INFO kube_hunter.modules.report.collector Found open =
+service "Kubelet API" at 10.240.0.2:10250<br>2021-08-24 09:23:40,956 INFO k=
+ube_hunter.modules.report.collector Found open service "API Server" at 10.2=
+40.0.2:6443<br>2021-08-24 09:23:41,013 INFO kube_hunter.modules.report.coll=
+ector Found vulnerability "K8s Version Disclosure" in 10.240.0.2:6443</p>
+</div>
+</div>
+<p>6. Once you the test is completed, the result displays on the terminal a=
+nd also a unique URL (associated with that token) for viewing the results, =
+which you can send to anyone else who needs to see the results.</p>
+<div id=3D"expander-858744679" class=3D"expand-container">
+<div id=3D"expander-control-858744679" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Viewing r=
+esult using unique URL (associated with that token) ran.</span>
+</div>
+<div id=3D"expander-content-858744679" class=3D"expand-content">
+<p>See full report:<br>+---------------------------------------------------=
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+------------------------------------------+<br>| <a href=3D"https://kube-hu=
+nter.aquasec.com/report.html?token=3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.e=
+yJ0aW1lIjoxNjI5Nzk2MzczLjUxMzU4NTYsImVtYWlsIjoiaWhlYW5hY2hvLmNodWt3dUBkZWlt=
+b3MuY28uemEiLCJyIjoiOTRlNTU1ODMifQ.sURJxJagxxr_9ysUAiX-cgVwvACI_pUdEWpL5wVV=
+GbU" class=3D"external-link" rel=3D"nofollow">https://kube-hunter.aquasec.c=
+om/report.html?token=3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aW1lIjoxNjI=
+5Nzk2MzczLjUxMzU4NTYsImVtYWlsIjoiaWhlYW5hY2hvLmNodWt3dUBkZWltb3MuY28uemEiLC=
+JyIjoiOTRlNTU1ODMifQ.sURJxJagxxr_9ysUAiX-cgVwvACI_pUdEWpL5wVVGbU</a> |<br>+=
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+------------------+</p>
+</div>
+</div>
+<h2 id=3D"UsingKubeHunterforkubernetestesting-Runkube-hunterasajob">Run kub=
+e-hunter as a job</h2>
+<p>The steps to set up kube-hunter are as follows:</p>
+<ol>
+<li><p>Connect to the bastion server.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">gcloud =
+compute ssh dev-dr-bastion</pre>=20
+</div>
+</div></li>
+<li><p>Clone the repository:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">git clo=
+ne https://github.com/aquasecurity/kube-hunter.git</pre>=20
+</div>
+</div></li>
+<li><p>Run the kube-hunter pod in your cluster:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ create -f kube-hunter/job.yaml</pre>=20
+</div>
+</div><p>nacho@dev-dr-bastion:~/tools$ kubectl apply -f kube-hunter/job.yam=
+l<br>job.batch/kube-hunter created</p></li>
+<li><p>Wait for the job and the corresponding pods to be completed.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ get jobs,pods</pre>=20
+</div>
+</div></li>
+</ol>
+<div id=3D"expander-848653676" class=3D"expand-container">
+<div id=3D"expander-control-848653676" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">checking =
+kube-hunter job and pod status</span>
+</div>
+<div id=3D"expander-content-848653676" class=3D"expand-content">
+<p>nacho@dev-dr-bastion:~/tools$ kubectl get jobs,pods<br>NAME COMPLETIONS =
+DURATION AGE<br>job.batch/kube-hunter 1/1 12s 4m22s</p>
+<p>NAME READY STATUS RESTARTS AGE<br>pod/kube-hunter-wfcp7 0/1 Completed 0 =
+4m22s</p>
+</div>
+</div>
+<p>5. View the logs to find any issues with your cluster:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ logs pod/'Name of kube-hunter pod'</pre>=20
+</div>
+</div>
+<div id=3D"expander-167670557" class=3D"expand-container">
+<div id=3D"expander-control-167670557" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"976345cb5c45a9cd04afeb0463f22a9d" widt=
+h=3D"16" height=3D"16"></span><span class=3D"expand-control-text">Viewing t=
+he report</span>
+</div>
+<div id=3D"expander-content-167670557" class=3D"expand-content">
+<p>kubectl logs pod/kube-hunter-wfcp7</p>
+<p>nacho@dev-dr-bastion:~/tools$ kubectl logs pod/kube-hunter-wfcp7<br>2021=
+-08-24 07:56:14,429 INFO kube_hunter.modules.report.collector Started hunti=
+ng</p>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_46_532586103.1647507240308
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/976345cb5c45a9cd04afeb0463f22a9d
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_46_532586103.1647507240308--

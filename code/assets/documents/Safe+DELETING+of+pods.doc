@@ -1,0 +1,395 @@
+Date: Thu, 17 Mar 2022 08:54:57 +0000 (UTC)
+Message-ID: <1941404078.11.1647507297401@70134d001b6d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_10_1922275244.1647507297400"
+
+------=_Part_10_1922275244.1647507297400
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Safe DELETING of pods</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Safe DELETING of pods</h1>
+    <div class=3D"Section1">
+        <p>NB: This is only a valid process for a <span style=3D"color: rgb=
+(76,154,255);">DEPLOYMENT</span>. </p>
+<p>In this example I had a failed <span style=3D"color: rgb(255,196,0);">Ar=
+goCD</span> <span style=3D"color: rgb(76,154,255);">DEPLOYMENT</span> and i=
+t resulted in an issue where I needed to delete some affected pods.</p>
+<p><strong><u>Genreal Scenario</u>:: </strong>So you have <span style=3D"co=
+lor: rgb(54,179,126);">PODS</span> in trouble that need to be <span style=
+=3D"color: rgb(76,154,255);">Deleted</span>. This even after attempting to =
+delete the <span style=3D"color: rgb(54,179,126);">PODS</span> / by reversi=
+ng a deployment as I did here..</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">wayne@d=
+ev-dr-bastion:~$ kubectl delete -n argocd -f argocd.yaml</pre>=20
+</div>
+</div>
+<p><strong>Note:</strong> <span style=3D"color: rgb(54,179,126);">NODES</sp=
+an> are <span style=3D"color: rgb(76,154,255);">Drained</span> by command b=
+ut may have other <span style=3D"color: rgb(54,179,126);">PODS</span> activ=
+e on them that are not in trouble. </p>
+<p>So:: <span style=3D"color: rgb(76,154,255);">Draining</span> a <span sty=
+le=3D"color: rgb(54,179,126);">NODE</span> or <span style=3D"color: rgb(76,=
+154,255);">deleting</span> pods on a <span style=3D"color: rgb(54,179,126);=
+">NODE</span> may disrupt deployments so proceed <span style=3D"color: rgb(=
+191,38,0);">CAREFULLY</span>!</p>
+<h3 id=3D"SafeDELETINGofpods-ToViewthedeployment..">To View the deployment.=
+.</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">wayne@d=
+ev-dr-bastion:~$ kubectl get deployments -A</pre>=20
+</div>
+</div>
+<p><code>--&gt;</code></p>
+<p style=3D"margin-left: 30.0px;"><code>NAMESPACE &nbsp;&nbsp;&nbsp;&nbsp;N=
+AME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READY &nbsp;&nbsp;UP=
+-TO-DATE &nbsp;&nbsp;AVAILABLE &nbsp;&nbsp;AGE </code><br><code>argocd &nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argocd-dex-server &nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/1 &nbsp;&nbsp;&nbsp;&nbsp;1 &nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37m </code><br><code>argocd &nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argocd-redis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/1 &nbsp;&nbsp;&nbsp;&nbsp=
+;1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37m </code><br><cod=
+e>argocd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argocd-repo-server &nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/1 &nbsp;&nbsp;&nbsp;&nbsp;1 &nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37m </code><br><code>argocd &n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argocd-server &nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/1 &nbsp;&nbsp;&nbsp;&n=
+bsp;1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37m </code><br><=
+code>kube-system &nbsp;&nbsp;calico-kube-controllers &nbsp;&nbsp;1/1 &nbsp;=
+&nbsp;&nbsp;&nbsp;1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10=
+d </code><br><code>kube-system &nbsp;&nbsp;coredns &nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;2/2 &nbsp;&nbsp;&nbsp;&nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;10d </code><br><code>kube-system &nbsp;&nbsp;dns-autoscale=
+r &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/1 &nb=
+sp;&nbsp;&nbsp;&nbsp;1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;10d</code><br><br></p>
+<h2 id=3D"SafeDELETINGofpods-Step0:FindoutWhat=E2=80=99sWhatwiththedeployme=
+nt">Step 0: Find out What=E2=80=99s What with the deployment</h2>
+<p>Find the Broken <span style=3D"color: rgb(54,179,126);">PODS</span> with=
+ their <span style=3D"color: rgb(54,179,126);">NODES</span>.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">wayne@d=
+ev-dr-bastion:~$ kubectl get pods -A -o wide | grep argocd</pre>=20
+</div>
+</div>
+<p><code>--&gt;</code></p>
+<p style=3D"margin-left: 30.0px;"><code>argocd argocd-application-controlle=
+r-0 0/1 ImagePullBackOff 0 8m10s 10.233.96.4 dev-worker-2 &lt;none&gt; &lt;=
+none&gt;</code></p>
+<p style=3D"margin-left: 30.0px;"><code>argocd argocd-dex-server-68c7bf5fdd=
+-5pj4q 0/1 Init:ImagePullBackOff 0 8m10s 10.233.96.3 dev-worker-2 &lt;none&=
+gt; &lt;none&gt;</code></p>
+<p style=3D"margin-left: 30.0px;"><code>argocd argocd-redis-7547547c4f-ljrf=
+c 0/1 ImagePullBackOff 0 8m10s 10.233.102.4 dev-worker-0 &lt;none&gt; &lt;n=
+one&gt;</code></p>
+<p style=3D"margin-left: 30.0px;"><code>argocd argocd-repo-server-58f87478b=
+8-2qmx4 0/1 ImagePullBackOff 0 8m10s 10.233.97.3 dev-worker-1 &lt;none&gt; =
+&lt;none&gt;</code></p>
+<p style=3D"margin-left: 30.0px;"><code>argocd argocd-server-6f4fcdc5dc-4dc=
+t7 0/1 ImagePullBackOff 0 8m10s 10.233.102.5 dev-worker-0 &lt;none&gt; &lt;=
+none&gt;</code></p>
+<p></p>
+<p><span style=3D"color: rgb(255,86,48);">.. So</span> <code>dev-worker-1</=
+code><span style=3D"color: rgb(255,86,48);"> .. </span><code>dev-worker-0</=
+code><span style=3D"color: rgb(255,86,48);"> ..</span> <code>dev-worker-2</=
+code><span style=3D"color: rgb(255,86,48);"> </span><span style=3D"color: r=
+gb(54,179,126);">NODES</span><span style=3D"color: rgb(255,86,48);"> are af=
+fected</span></p>
+<h2 id=3D"SafeDELETINGofpods-Step:1MarkthesenodesasUnSchedulable">Step:1 Ma=
+rk these nodes as UnSchedulable</h2>
+<p>&nbsp;I.e Cordon Off the nodes affected so that no new pods will get sch=
+eduled to the node while you are prepping it for removal or maintenance. Yo=
+u use the the&nbsp;<code>kubectl</code>&nbsp;<code>cordon</code>&nbsp;comma=
+nd</p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">wayne@d=
+ev-dr-bastion:~$ kubectl cordon dev-worker-0
+wayne@dev-dr-bastion:~$ kubectl cordon dev-worker-1
+wayne@dev-dr-bastion:~$ kubectl cordon dev-worker-2</pre>=20
+</div>
+</div>
+<h2 id=3D"SafeDELETINGofpods-Step:2Nowyoucanworkonmovingpodsoffofthenode.">=
+&nbsp;Step:2 Now you can work on moving pods off of the node. </h2>
+<p>If you need more <span style=3D"color: rgb(76,154,255);">replicas</span>=
+ for the <span style=3D"color: rgb(76,154,255);">DEPLOYMENT</span> when you=
+ have failed <span style=3D"color: rgb(76,154,255);">PODS</span> but still =
+have a working <span style=3D"color: rgb(76,154,255);">DEPLOYMENT</span> yo=
+u can use increase the <span style=3D"color: rgb(76,154,255);">replicas</sp=
+an> by one so that the other nodes pick up the workload, delete the effecte=
+d <span style=3D"color: rgb(76,154,255);">POD</span> (by Name) and then res=
+et the <span style=3D"color: rgb(76,154,255);">replicas</span> to the origi=
+nal value.</p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ scale deployment argocd --replicas=3D2
+kubectl delete pod argocd-redis-7547547c4f-ljrfc  =20
+  ... &lt;&lt;other pods delete&gt;&gt;
+kubectl scale deployment argocd --replicas=3D1</pre>=20
+</div>
+</div>
+<h2 id=3D"SafeDELETINGofpods-Step:3NB!!!!AllowpodsbackontothenodesinCORDONm=
+ode.">Step:3 NB!!!! Allow pods back onto the nodes in CORDON mode.</h2>
+<p>Use the&nbsp;<code>kubectl&nbsp;uncordon</code>&nbsp;command to allow sc=
+heduling on the node again. </p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">wayne@d=
+ev-dr-bastion:~$ kubectl uncordon dev-worker-0
+wayne@dev-dr-bastion:~$ kubectl uncordon dev-worker-1
+wayne@dev-dr-bastion:~$ kubectl uncordon dev-worker-2</pre>=20
+</div>
+</div>
+<p>&nbsp;</p>
+<p>EOF()</p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_10_1922275244.1647507297400--

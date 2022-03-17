@@ -1,0 +1,302 @@
+Date: Thu, 17 Mar 2022 08:53:10 +0000 (UTC)
+Message-ID: <600669003.85.1647507190314@9721ef3e1bb5>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_84_1596238085.1647507190314"
+
+------=_Part_84_1596238085.1647507190314
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Remediating Kubernetes Cluster using Kube-Bench tool</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Remediating Kubernetes Cluster using Kube-Bench tool</h1>
+    <div class=3D"Section1">
+        <p> Kube-bench is tool that checks whether Kubernetes is deployed s=
+ecurely by running the checks documented in the <a href=3D"https://www.cise=
+curity.org/benchmark/kubernetes/" class=3D"external-link" rel=3D"nofollow">=
+CIS Kubernetes Benchmark</a>. Once we have the scanning report we could be =
+able to apply suggested fix to it referencing the steps documented in the C=
+IS Kubernetes Benchmark available in the <a href=3D"https://downloads.cisec=
+urity.org/" class=3D"external-link" rel=3D"nofollow">CIS Benchmark download=
+ page.</a> </p>
+<h2 id=3D"RemediatingKubernetesClusterusingKube-Benchtool-Understandingtheo=
+utputstatesinKubebench"><strong>Understanding the output states in Kube ben=
+ch</strong></h2>
+<p>When running kube-bench, you can get four output states:</p>
+<ul>
+<li><p><strong>PASS </strong>=E2=80=93 the test ran successfully and the re=
+sults passed the standards.</p></li>
+<li><p><strong>FAIL</strong> =E2=80=93 the test ran successfully and the re=
+sults failed to meet the standards. You also receive a remediation output, =
+which either describes how you can fix the configuration, or provides an er=
+ror message that explains why it was not possible to run the test.</p></li>
+<li><p><strong>WARN </strong>=E2=80=93 the test requires further attention.=
+ A remediation output provides specific information regarding the matter.</=
+p></li>
+<li><p>I<strong>NFO</strong> =E2=80=93 provides informational output that d=
+oes not require any further action.</p></li>
+</ul>
+<h2 id=3D"RemediatingKubernetesClusterusingKube-Benchtool-ApplyingRemediati=
+on/FixinaccordancetoCISKubernetesBenchmark"><strong>Applying Remediation/Fi=
+x in accordance to CIS Kubernetes Benchmark</strong></h2>
+<p>Download the <strong>CIS Kubernetes Benchmark</strong> PDF from the <a h=
+ref=3D"https://downloads.cisecurity.org/" class=3D"external-link" rel=3D"no=
+follow">CIS Benchmark download page.</a> The manual will be referred to as =
+a guide for remediating issues. To track a =E2=80=98<strong>fail</strong>=
+=E2=80=99 in the kube bench test, get the ID and search for it in the manua=
+l.</p>
+<p><strong>NOTE: When referring to CIS Kubernetes Benchmark ensure that you=
+ have the specific PDF for your platform, depending if you working on the D=
+IY Cluster (Self managed cluster) or the GKE Cluster.</strong></p>
+<ul>
+<li><p>CIS Kubernetes Benchmark v1.6.0</p></li>
+<li><p>CIS Google Kubernetes Engine (GKE) Benchmark v1.1.0</p></li>
+</ul>
+<p></p>
+<p>Here are steps to follow to track a =E2=80=98<strong>fail</strong>=E2=80=
+=99 in the kube bench test:</p>
+<ul>
+<li><p>Download the specific CIS Benchmark for your cluster.</p></li>
+<li><p>Get the ID and search for it in the manual.</p></li>
+<li><p>As an example, let say we had a fail in our DIY cluster after runnin=
+g the kube bench test with the description below: </p></li>
+</ul>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>'[FAIL] 4.2.6 Ensure that the --protect-kernel-defaults argument is set =
+to true (Automated)'</p>
+</div>
+</div>
+<ul>
+<li><p>We will note the ID as <strong>4.2.6</strong> and search for its rem=
+ediation in the CIS Kubernetes Benchmark v1.6.0.</p></li>
+<li><p>Then follow the remediation and Apply the fix.</p></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_84_1596238085.1647507190314--

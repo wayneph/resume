@@ -1,0 +1,575 @@
+Date: Thu, 17 Mar 2022 08:24:20 +0000 (UTC)
+Message-ID: <152201380.43.1647505460484@861bbb5c31c3>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_42_1735861479.1647505460484"
+
+------=_Part_42_1735861479.1647505460484
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Redis</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Redis</h1>
+    <div class=3D"Section1">
+        <p>CONTENTS</p>
+<p>introduction</p>
+<p>Usage for Redis Sentinel</p>
+<p>Distributed nature of sentinel</p>
+<p>Testing for the retrival and refreshing of cached objects</p>
+<p>Deploying Redis sentinel as a statefulset using taints and tolerations</=
+p>
+<p>Redis Configuration Commands</p>
+<p>References</p>
+<p></p>
+<h3 id=3D"Redis-INTRODUCTION"><strong><u>INTRODUCTION</u></strong></h3>
+<p> Redis is an open source in-memory data structure store which can be use=
+d as a database and/or cache and message broker. Redis provides data struct=
+ures and provides high availability via&nbsp;<a href=3D"https://redis.io/to=
+pics/sentinel" class=3D"external-link" rel=3D"nofollow">Redis Sentinel</a>&=
+nbsp;and automatic partitioning with&nbsp;<a href=3D"https://redis.io/topic=
+s/cluster-tutorial" class=3D"external-link" rel=3D"nofollow">Redis Cluster<=
+/a>.</p>
+<p>&nbsp; &nbsp; Redis works with an&nbsp;in-memory dataset. Depending on y=
+our use case, you can persist your data either by periodically&nbsp;<a href=
+=3D"https://redis.io/topics/persistence#snapshotting" class=3D"external-lin=
+k" rel=3D"nofollow">dumping the dataset to disk</a>&nbsp;or by&nbsp;<a href=
+=3D"https://redis.io/topics/persistence#append-only-file" class=3D"external=
+-link" rel=3D"nofollow">appending each command to a disk-based log</a>. You=
+ can also disable persistence if you just need a feature-rich, networked, i=
+n-memory cache.</p>
+<h3 id=3D"Redis-USAGEFORREDISSENTINEL"><br><strong><u>USAGE FOR REDIS SENTI=
+NEL</u></strong></h3>
+<p>Redis Sentinel provides high availability for Redis. That is using senti=
+nel we can create a redis deployment that will resist certain kind of failu=
+res automatically. It will detect these failures and bring the cluster back=
+ to a stable mode.</p>
+<p>It will also carry out&nbsp; monitoring, notifications and acts as a con=
+figuration provider for clients.</p>
+<p>This is the full list of Sentinel capabilities at a macroscopical level =
+(i.e. the&nbsp;big picture):</p>
+<p><br></p>
+<ul>
+<li><p>Monitoring. Sentinel constantly checks if your master and replica in=
+stances are working as expected.</p></li>
+<li><p>Notification. Sentinel can notify the system administrator, or other=
+ computer programs, via an API, that something is wrong with one of the mon=
+itored Redis instances.</p></li>
+<li><p>Automatic failover. If a master is not working as expected, Sentinel=
+ can start a failover process where a replica is promoted to master, the ot=
+her additional replicas are reconfigured to use the new master, and the app=
+lications using the Redis server are informed about the new address to use =
+when connecting.</p></li>
+<li><p>Configuration provider. Sentinel acts as a source of authority for c=
+lients service discovery: clients connect to Sentinels in order to ask for =
+the address of the current Redis master responsible for a given service. If=
+ a failover occurs, Sentinels will report the new address.</p></li>
+</ul>
+<h3 id=3D"Redis-DISTRIBUTEDNATUREOFSENTINEL"><br><strong><u>DISTRIBUTED NAT=
+URE OF SENTINEL</u></strong></h3>
+<p>Redis Sentinel is a distributed system:</p>
+<p>Sentinel itself is designed to run in a configuration where there are mu=
+ltiple Sentinel processes cooperating together. The advantage of having mul=
+tiple Sentinel processes cooperating are the following:</p>
+<ol>
+<li><p>Failure detection is performed when multiple Sentinels agree about t=
+he fact a given master is no longer available. This lowers the probability =
+of false positives.</p></li>
+<li><p>Sentinel works even if not all the Sentinel processes are working, m=
+aking the system robust against failures. There is no fun in having a failo=
+ver system which is itself a single point of failure, after all.</p></li>
+</ol>
+<p>The sum of Sentinels, Redis instances (masters and replicas) and clients=
+ connecting to Sentinel and Redis, are also a larger distributed system wit=
+h specific properties. In this document concepts will be introduced gradual=
+ly starting from basic information needed in order to understand the basic =
+properties of Sentinel, to more complex information (that are optional) in =
+order to understand how exactly Sentinel work</p>
+<h3 id=3D"Redis-TESTINGFORTHERETRIVALANDREFRESHINGOFCACHEDOBJECTS"><br><str=
+ong><u>TESTING FOR THE RETRIVAL AND REFRESHING OF CACHED OBJECTS</u></stron=
+g></h3>
+<p>It sees the problem from the point of view of a different tradeoff, does=
+ not consume any memory on the server side, but instead sends more invalida=
+tion messages to clients. In this mode we have the following main behaviors=
+:</p>
+<ul>
+<li><p>Clients enable client side caching using the&nbsp;BCAST&nbsp;option,=
+ specifying one or more prefixes using the&nbsp;PREFIX&nbsp;option. For ins=
+tance:&nbsp;CLIENT TRACKING on REDIRECT 10 BCAST PREFIX object: PREFIX user=
+:. If no prefix is specified at all, the prefix is assumed to be the empty =
+string, so the client will receive invalidation messages for every key that=
+ gets modified. Instead if one or more prefixes are used, only keys matchin=
+g the one of the specified prefixes will be sent in the invalidation messag=
+es.</p></li>
+<li><p>The server does not store anything in the invalidation table. Instea=
+d it only uses a different&nbsp;Prefixes Table, where each prefix is associ=
+ated to a list of clients.</p></li>
+<li><p>No two prefixes can track overlapping parts of the keyspace. For ins=
+tance, having the prefix foo and foob would not be allowed, since they woul=
+d both trigger an invalidation for the key foobar. However, just using the =
+prefix foo is sufficient.</p></li>
+<li><p>Every time a key matching any of the prefixes is modified, all the c=
+lients subscribed to such prefix, will receive the invalidation message.</p=
+></li>
+<li><p>The server will consume a CPU proportional to the number of register=
+ed prefixes. If you have just a few, it is hard to see any difference. With=
+ a big number of prefixes the CPU cost can become quite large.</p></li>
+<li><p>In this mode the server can perform the optimization of creating a s=
+ingle reply for all the clients subscribed to a given prefix, and send the =
+same reply to all. This helps to lower the CPU usage.</p></li>
+</ul>
+<h3 id=3D"Redis-DEPLOYINGREDISASASTATEFULSETUSINGTAINTSANDTOLERATIONS"><br>=
+<strong><u>DEPLOYING REDIS AS A STATEFULSET USING TAINTS AND TOLERATIONS</u=
+></strong></h3>
+<p>PREREQUISITES</p>
+<ul>
+<li><p>You have basic knowledge of&nbsp;<a href=3D"https://www.docker.com/"=
+ class=3D"external-link" rel=3D"nofollow">Docker</a>&nbsp;containers.</p></=
+li>
+<li><p>You have a&nbsp;<a href=3D"https://docs.bitnami.com/kubernetes/" cla=
+ss=3D"external-link" rel=3D"nofollow">Kubernetes cluster running</a>&nbsp;i=
+n the platform of your choice. This tutorial uses&nbsp;<a href=3D"https://d=
+ocs.bitnami.com/kubernetes/get-started-kubernetes/" class=3D"external-link"=
+ rel=3D"nofollow">Minikube</a>.</p></li>
+<li><p>You have the&nbsp;<a href=3D"https://docs.bitnami.com/kubernetes/get=
+-started-kubernetes/#step-3-install-kubectl-command-line" class=3D"external=
+-link" rel=3D"nofollow">kubectl&nbsp;command line (kubectl&nbsp;CLI)</a>&nb=
+sp;installed.</p></li>
+<li><p>You have&nbsp;<a href=3D"https://docs.bitnami.com/kubernetes/get-sta=
+rted-kubernetes/#step-4-install-helm" class=3D"external-link" rel=3D"nofoll=
+ow">Helm v3.x</a>&nbsp;installed.</p></li>
+</ul>
+<p><br></p>
+<ol>
+<li><p>I&nbsp; used redis bitnami helm chart for this task and enabled bitn=
+ami , all configuration values are defined here, I enabled sentinel any oth=
+er configuration we need can be enabled in the file</p></li>
+</ol>
+<p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">sentine=
+l:
+    enabled: true</pre>=20
+</div>
+</div>
+<p> &nbsp; Using the latest version of the chart we deploy the helm chart w=
+hich will deploy a cluster with four nodes (one master and three slaves), w=
+e=E2=80=99ll manually deploy a client node, so in total we have five nodes,=
+ the client node is needed so we access the master node, hence we run the r=
+edis client in a separate pod. By executing this command.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ run --namespace redis redis-client --restart=3D'Never'&nbsp; --env REDIS_P=
+ASSWORD=3D $bcVTDUwmOss+pf1vhBXOXO/MAVOQ2FCy4PWvpch/qTwXJKpOvDV6GoIlBj3Sy2O=
++fotplGhIz1qoRt30% --image docker.io/bitnami/redis:5.0.7-debian-10-r32 --co=
+mmand -- sleep infinity</pre>=20
+</div>
+</div>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The chart creates a headless se=
+rvice for internal access. To access the master node, it is necessary to ge=
+t the name of the headless service which is running in all cluster pods. Ac=
+cess the master node by running the&nbsp;redis-cli&nbsp;command&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">redis-c=
+li -h POD-NAME.HEADLESS-SVC-NAME -a $REDIS_PASSWORD</pre>=20
+</div>
+</div>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;To test the replication between the mas=
+ter and the slave nodes, define a new variable and define a new value using=
+ the&nbsp;set&nbsp;command. Then, check that the value has been successfull=
+y defined by executing the&nbsp;get&nbsp;command</p>
+<p><br>2.&nbsp; We can check the Cluster metrics and sentinel failover</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; First, to check the cluster metrics, =
+you need to make the metrics pod accessible from your local system. Execute=
+ the&nbsp;kubectl get svc&nbsp;to get the name of the metrics pod service a=
+nd its port:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Port forward the metrics pod by runni=
+ng the command below. Replace SVC-NAME and PORT with the name of the servic=
+e and the port you obtained in the step above:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"> kubect=
+l port-forward svc/SVC-NAME PORT:PORT&nbsp; &nbsp;</pre>=20
+</div>
+</div>
+<p>The port now is forwarded to your localhost:</p>
+<p>&nbsp;To get the cluster metrics, open a new terminal and invoke the dat=
+a collected by the metrics pod:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">curl 12=
+7.0.0.1:PORT/metrics</pre>=20
+</div>
+</div>
+<p></p>
+<p>3. Rolling Updates for statefulset</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The&nbsp;RollingUpdate&=
+nbsp;update strategy implements automated, rolling update for the Pods in a=
+ StatefulSet. It is the&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default strategy =
+when&nbsp;.spec.updateStrategy&nbsp;is left unspecified. When a StatefulSet=
+'s&nbsp;.spec.updateStrategy.type&nbsp;is set to&nbsp;RollingUpdate, the St=
+atefulSet controller will delete and recreate each Pod in the StatefulSet. =
+It will proceed in the same order as Pod termination (from the largest ordi=
+nal to the smallest), updating each Pod one at a time. It will wait until a=
+n updated Pod is Running and Ready prior to updating its predecessor.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Partitions</p>
+<p>The&nbsp;RollingUpdate&nbsp;update strategy can be partitioned, by speci=
+fying a&nbsp;.spec.updateStrategy.rollingUpdate.partition. If a partition i=
+s specified, all Pods with an ordinal that is greater than or equal to the =
+partition will be updated when the StatefulSet's&nbsp;.spec.template&nbsp;i=
+s updated. All Pods with an ordinal that is less than the partition will no=
+t be updated, and, even if they are deleted, they will be recreated at the =
+previous version. If a StatefulSet's&nbsp;.spec.updateStrategy.rollingUpdat=
+e.partition&nbsp;is greater than its&nbsp;.spec.replicas, updates to its&nb=
+sp;.spec.template&nbsp;will not be propagated to its Pods. In most cases yo=
+u will not need to use a partition, but they are useful if you want to stag=
+e an update, roll out a canary, or perform a phased roll out.</p>
+<p><br>4. &nbsp; Taints and tolerations work together to ensure that pods a=
+re not scheduled onto inappropriate nodes. One or more taints are applied t=
+o a node; this marks that the node should not accept any pods that do not t=
+olerate the taints. The same key-value pairs have been applied to the pods.=
+</p>
+<h3 id=3D"Redis-REDISCONFIGURATIONCOMMANDS"><br><strong><u>REDIS CONFIGURAT=
+ION COMMANDS</u></strong></h3>
+<p><br>NAME: redis</p>
+<p>LAST DEPLOYED: Tue Jul 27 11:11:38 2021</p>
+<p>NAMESPACE: default</p>
+<p>STATUS: deployed</p>
+<p>REVISION: 1</p>
+<p>TEST SUITE: None</p>
+<p>NOTES:</p>
+<p><br></p>
+<p>Redis(TM) can be accessed via port 6379 on the following DNS name from w=
+ithin your cluster:</p>
+<p> redis.default.svc.cluster.local for read only operations</p>
+<p>For read/write operations, first access the Redis(TM) Sentinel cluster, =
+which is available in port 26379 using the same domain name above.</p>
+<ul>
+<li><p>To get your password run:</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"> export=
+ REDIS_PASSWORD=3D$(kubectl get secret --namespace default redis -o jsonpat=
+h=3D"{.data.redis-password}" | base64 --decode)</pre>=20
+</div>
+</div>
+<ul>
+<li><p>To connect to your Redis(TM) server:</p></li>
+</ul>
+<p>Run a Redis(TM) pod that you can use as a client:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ run --namespace redis redis-client-1 --restart=3D'Never'&nbsp; --env REDIS=
+_PASSWORD=3D$REDIS_PASSWORD&nbsp; --image docker.io/bitnami/redis:5.0.7-deb=
+ian-10-r32 --command -- sleep infinity</pre>=20
+</div>
+</div>
+<ul>
+<li><p>&nbsp;&nbsp; Use the following command to attach to the pod:</p></li=
+>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"> kubect=
+l exec --tty -i redis-client-1 \ --namespace redis =E2=80=94 bash</pre>=20
+</div>
+</div>
+<ul>
+<li><p>Connect using the Redis(TM) CLI:</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">redis-c=
+li -h redis -p 6379 -a $REDIS_PASSWORD # Read only operations
+redis-cli -h redis -p 26379 -a $REDIS_PASSWORD # Sentinel access</pre>=20
+</div>
+</div>
+<p>&nbsp;&nbsp; &nbsp;&nbsp; </p>
+<ul>
+<li><p>To connect to your database from outside the cluster execute the fol=
+lowing commands:</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">kubectl=
+ port-forward --namespace default svc/redis 6379:6379 &amp;
+redis-cli -h 127.0.0.1 -p 6379 -a $REDIS_PASSWORD</pre>=20
+</div>
+</div>
+<ul>
+<li><p>&nbsp;Configure namespace: &nbsp; kubectl config set-context --curre=
+nt --namespace=3Dredis</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">To get =
+password: connect using kubectl exec -it redis-node-0 -- sh and then type e=
+nv
+To get password:&nbsp; env | grep REDIS in the $ environment</pre>=20
+</div>
+</div>
+<p>&nbsp;&nbsp; &nbsp; </p>
+<p>References:</p>
+<p><a href=3D"https://kubernetes.io/docs/concepts/scheduling-eviction/taint=
+-and-toleration/" data-card-appearance=3D"inline" class=3D"external-link" r=
+el=3D"nofollow">https://kubernetes.io/docs/concepts/scheduling-eviction/tai=
+nt-and-toleration/</a> </p>
+<p><a href=3D"https://kubernetes.io/docs/concepts/workloads/controllers/sta=
+tefulset/" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"n=
+ofollow">https://kubernetes.io/docs/concepts/workloads/controllers/stateful=
+set/</a> </p>
+<p><a href=3D"https://docs.bitnami.com/tutorials/deploy-redis-sentinel-prod=
+uction-cluster/" data-card-appearance=3D"inline" class=3D"external-link" re=
+l=3D"nofollow">https://docs.bitnami.com/tutorials/deploy-redis-sentinel-pro=
+duction-cluster/</a> </p>
+<p><a href=3D"https://redis.io/topics/sentinel" data-card-appearance=3D"inl=
+ine" class=3D"external-link" rel=3D"nofollow">https://redis.io/topics/senti=
+nel</a> </p>
+<p><a href=3D"https://redislabs.com/wp-content/uploads/2016/03/15-Reasons-C=
+aching-is-best-with-Redis-RedisLabs-1.pdf" class=3D"external-link" rel=3D"n=
+ofollow">https://redislabs.com/wp-content/uploads/2016/03/15-Reasons-Cachin=
+g-is-best-with-Redis-RedisLabs-1.pdf</a></p>
+<p><a href=3D"https://redis.io/topics/introduction" data-card-appearance=3D=
+"inline" class=3D"external-link" rel=3D"nofollow">https://redis.io/topics/i=
+ntroduction</a> </p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_42_1735861479.1647505460484--

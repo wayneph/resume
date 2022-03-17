@@ -1,0 +1,481 @@
+Date: Thu, 17 Mar 2022 08:55:13 +0000 (UTC)
+Message-ID: <1535399891.31.1647507313741@718dcbbeec53>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_30_1420926921.1647507313741"
+
+------=_Part_30_1420926921.1647507313741
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>InCreation::Install Argo CD (First time in a new cluster)</title=
+>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>InCreation::Install Argo CD (First time in a new cluster)</h1>
+    <div class=3D"Section1">
+        <p>WIP : HELM must be installed..</p>
+<p>Required =E2=80=A6</p>
+<p>Check here..</p>
+<p>wayne@dev-dr-bastion:~$ ps aux |grep helm*</p>
+<p>wayne 119914 0.0 0.0 8168 740 pts/1 R+ 11:49 0:00 grep --color=3Dauto he=
+lm*</p>
+<p>wayne@dev-dr-bastion:~$ helm --help</p>
+<p>Command 'helm' not found, but can be installed with:</p>
+<p>snap install helm</p>
+<p>Please ask your administrator.</p>
+<p>wayne@dev-dr-bastion:~$</p>
+<p>ENSURE THAT essential K8s utils are not upgradable</p>
+<hr>
+<p>=E2=80=93 add commands here </p>
+<p><a href=3D"https://github.com/helm/helm/releases" data-card-appearance=
+=3D"inline" class=3D"external-link" rel=3D"nofollow">https://github.com/hel=
+m/helm/releases</a> =E2=80=93 3.6 is the latest Major @doc-create date</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ curl =
+-fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scr=
+ipts/get-helm-3
+$ chmod 700 get_helm.sh
+$ ./get_helm.sh</pre>=20
+</div>
+</div>
+<p></p>
+<p><code>.Downloading https://get.helm.sh/helm-v3.6.3-linux-amd64.tar.gz </=
+code><br><code>Verifying checksum... Done. </code><br><code>Preparing to in=
+stall helm into /usr/local/bin </code><br><code>helm installed into /usr/lo=
+cal/bin/helm</code><br><br><code>wayne@dev-dr-bastion:~$ helm version </cod=
+e><br><code>WARNING: Kubernetes configuration file is group-readable. This =
+is insecure. Location: /home/wayne/.kube/config </code><br><code>WARNING: K=
+ubernetes configuration file is world-readable. This is insecure. Location:=
+ /home/wayne/.kube/config </code><br><code>version.BuildInfo{Version:"v3.6.=
+3", GitCommit:"d506314abfb5d21419df8c7e7e68012379db2354", GitTreeState:"cle=
+an", GoVersion:"go1.16.5"} </code><br><code>wayne@dev-dr-bastion:~$ </code>=
+<br><br><code>// install ARGOCD</code></p>
+<p><code>wayne@dev-dr-bastion:~$ kubectl create namespace argocd</code><br>=
+</p>
+<p></p>
+<p><code>namespace/argocd created </code><br><code>wayne@dev-dr-bastion:~$ =
+curl https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/in=
+stall.yaml -o argocd.yaml </code><br><code>&nbsp;% Total &nbsp;&nbsp;&nbsp;=
+% Received % Xferd &nbsp;Average Speed &nbsp;&nbsp;Time &nbsp;&nbsp;&nbsp;T=
+ime &nbsp;&nbsp;&nbsp;&nbsp;Time &nbsp;Current </code><br><code>&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dload &nbsp;Upload &nbsp;&nbsp;Total &nbsp;&=
+nbsp;Spent &nbsp;&nbsp;&nbsp;Left &nbsp;Speed </code><br><code>100 &nbsp;13=
+3k &nbsp;100 &nbsp;133k &nbsp;&nbsp;&nbsp;0 &nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp=
+;&nbsp;631k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 --:--:-- --:--:-- --:--:-- &nbs=
+p;631k</code><br><br></p>
+<p><code>wayne@dev-dr-bastion:~$ kubectl apply -n argocd -f argocd.yaml &nb=
+sp;</code><br><code>customresourcedefinition.apiextensions.k8s.io/applicati=
+ons.argoproj.io created </code><br><code>customresourcedefinition.apiextens=
+ions.k8s.io/appprojects.argoproj.io created </code><br><code>serviceaccount=
+/argocd-application-controller created </code><br><code>serviceaccount/argo=
+cd-dex-server created </code><br><code>serviceaccount/argocd-redis created =
+</code><br><code>serviceaccount/argocd-server created </code><br><code>role=
+.rbac.authorization.k8s.io/argocd-application-controller created </code><br=
+><code>role.rbac.authorization.k8s.io/argocd-dex-server created </code><br>=
+<code>role.rbac.authorization.k8s.io/argocd-redis created </code><br><code>=
+role.rbac.authorization.k8s.io/argocd-server created </code><br><code>clust=
+errole.rbac.authorization.k8s.io/argocd-application-controller created </co=
+de><br><code>clusterrole.rbac.authorization.k8s.io/argocd-server created </=
+code><br><code>rolebinding.rbac.authorization.k8s.io/argocd-application-con=
+troller created </code><br><code>rolebinding.rbac.authorization.k8s.io/argo=
+cd-dex-server created </code><br><code>rolebinding.rbac.authorization.k8s.i=
+o/argocd-redis created </code><br><code>rolebinding.rbac.authorization.k8s.=
+io/argocd-server created </code><br><code>clusterrolebinding.rbac.authoriza=
+tion.k8s.io/argocd-application-controller created </code><br><code>clusterr=
+olebinding.rbac.authorization.k8s.io/argocd-server created </code><br><code=
+>configmap/argocd-cm created </code><br><code>configmap/argocd-gpg-keys-cm =
+created </code><br><code>configmap/argocd-rbac-cm created </code><br><code>=
+configmap/argocd-ssh-known-hosts-cm created </code><br><code>configmap/argo=
+cd-tls-certs-cm created </code><br><code>secret/argocd-secret created </cod=
+e><br><code>service/argocd-dex-server created </code><br><code>service/argo=
+cd-metrics created </code><br><code>service/argocd-redis created </code><br=
+><code>service/argocd-repo-server created </code><br><code>service/argocd-s=
+erver created </code><br><code>service/argocd-server-metrics created </code=
+><br><code>deployment.apps/argocd-dex-server created </code><br><code>deplo=
+yment.apps/argocd-redis created </code><br><code>deployment.apps/argocd-rep=
+o-server created </code><br><code>deployment.apps/argocd-server created </c=
+ode><br><code>statefulset.apps/argocd-application-controller created </code=
+><br><code>networkpolicy.networking.k8s.io/argocd-application-controller-ne=
+twork-policy created </code><br><code>networkpolicy.networking.k8s.io/argoc=
+d-dex-server-network-policy created </code><br><code>networkpolicy.networki=
+ng.k8s.io/argocd-redis-network-policy created </code><br><code>networkpolic=
+y.networking.k8s.io/argocd-repo-server-network-policy created </code><br><c=
+ode>networkpolicy.networking.k8s.io/argocd-server-network-policy created </=
+code><br><code>wayne@dev-dr-bastion:~$ </code><br><br><br>=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D errors on pods =3D=3D=3D drain</p>
+<p><code>kubectl get pods -A -o wide | grep argocd</code><br><br>will find =
+the node names for argo-cd pods</p>
+<p><code>argocd argocd-application-controller-0 0/1 ImagePullBackOff 0 8m10=
+s 10.233.96.4 dev-worker-2 &lt;none&gt; &lt;none&gt;</code></p>
+<p><code>argocd argocd-dex-server-68c7bf5fdd-5pj4q 0/1 Init:ImagePullBackOf=
+f 0 8m10s 10.233.96.3 dev-worker-2 &lt;none&gt; &lt;none&gt;</code></p>
+<p><code>argocd argocd-redis-7547547c4f-ljrfc 0/1 ImagePullBackOff 0 8m10s =
+10.233.102.4 dev-worker-0 &lt;none&gt; &lt;none&gt;</code></p>
+<p><code>argocd argocd-repo-server-58f87478b8-2qmx4 0/1 ImagePullBackOff 0 =
+8m10s 10.233.97.3 dev-worker-1 &lt;none&gt; &lt;none&gt;</code></p>
+<p><code>argocd argocd-server-6f4fcdc5dc-4dct7 0/1 ImagePullBackOff 0 8m10s=
+ 10.233.102.5 dev-worker-0 &lt;none&gt; &lt;none&gt;</code></p>
+<p>Now Drain Nodes..</p>
+<p></p>
+<h1 id=3D"InCreation::InstallArgoCD(Firsttimeinanewcluster)-WIP..Stillbusyc=
+reating/editing(WaynePhilip)">WIP.. Still busy creating / editing (Wayne Ph=
+ilip)</h1>
+<p>When and When not to</p>
+<p>Access the bastion server</p>
+<p>cd ~/</p>
+<p>git init</p>
+<p>wayne@dev-dr-bastion:~$ git init</p>
+<p>Initialized empty Git repository in /home/wayne/.git/</p>
+<p>wayne@dev-dr-bastion:~$ git pull https://bitbucket.org/prevoirsolutionsi=
+nformatiques/gitops</p>
+<p>Username for 'https://bitbucket.org': WaynePhilip</p>
+<p>Password for 'https://WaynePhilip@bitbucket.org': </p>
+<p>Receiving objects: 100% (1159/1159), 719.49 KiB | 2.23 MiB/s, done.</p>
+<p>Resolving deltas: 100% (556/556), done.</p>
+<p>From https://bitbucket.org/prevoirsolutionsinformatiques/gitops</p>
+<ul>
+<li><p>branch HEAD -&gt; FETCH_HEAD</p></li>
+</ul>
+<p><code>wayne@dev-dr-bastion:~$ ll </code><br><code>total 76 </code><br><c=
+ode>drwxr-xr-x 13 wayne wayne 4096 Aug &nbsp;9 11:23 ./ </code><br><code>dr=
+wxr-xr-x 13 root &nbsp;root &nbsp;4096 Aug &nbsp;7 18:09 ../ </code><br><co=
+de>-rw------- &nbsp;1 wayne wayne &nbsp;738 Aug &nbsp;9 09:42 .bash_history=
+ </code><br><code>-rw-r--r-- &nbsp;1 wayne wayne &nbsp;220 Feb 25 &nbsp;202=
+0 .bash_logout </code><br><code>-rw-r--r-- &nbsp;1 wayne wayne 3771 Feb 25 =
+&nbsp;2020 .bashrc </code><br><code>drwx------ &nbsp;2 wayne wayne 4096 Aug=
+ &nbsp;5 09:09 .cache/ </code><br><code>drwxrwxr-x &nbsp;8 wayne wayne 4096=
+ Aug &nbsp;9 11:23 .git/ </code><br><code>-rw-rw-r-- &nbsp;1 wayne wayne &n=
+bsp;624 Aug &nbsp;9 11:23 .gitignore </code><br><code>drwxrwxr-x &nbsp;3 wa=
+yne wayne 4096 Aug &nbsp;9 11:22 .kube/ </code><br><code>drwxrwxr-x &nbsp;3=
+ wayne wayne 4096 Aug &nbsp;5 09:33 .local/ </code><br><code>-rw-r--r-- &nb=
+sp;1 wayne wayne &nbsp;807 Feb 25 &nbsp;2020 .profile </code><br><code>drwx=
+------ &nbsp;2 wayne wayne 4096 Jul 29 14:42 .ssh/ </code><br><code>-rw-rw-=
+r-- &nbsp;1 wayne wayne 1465 Aug &nbsp;9 11:23 README.md </code><br><code>d=
+rwxrwxr-x &nbsp;3 wayne wayne 4096 Aug &nbsp;9 11:23 ansible/ </code><br><c=
+ode>drwxrwxr-x 10 wayne wayne 4096 Aug &nbsp;9 11:23 charts/ </code><br><co=
+de>drwxrwxr-x &nbsp;2 wayne wayne 4096 Aug &nbsp;9 11:15 chartsFromBB/ </co=
+de><br><code>drwxrwxr-x 19 wayne wayne 4096 Aug &nbsp;9 11:23 dev/ </code><=
+br><code>drwxrwxr-x 18 wayne wayne 4096 Aug &nbsp;9 11:23 k8sDiyGCP/ </code=
+><br><code>drwxr-xr-x &nbsp;3 wayne wayne 4096 Aug &nbsp;5 09:09 snap/ </co=
+de><br><code>wayne@dev-dr-bastion:~$ cd charts </code><br><code>wayne@dev-d=
+r-bastion:~/charts$ ll </code><br><code>total 40 </code><br><code>drwxrwxr-=
+x 10 wayne wayne 4096 Aug &nbsp;9 11:23 ./ </code><br><code>drwxr-xr-x 13 w=
+ayne wayne 4096 Aug &nbsp;9 11:23 ../ </code><br><code>drwxrwxr-x &nbsp;2 w=
+ayne wayne 4096 Aug &nbsp;9 11:23 argocd/ </code><br><code>drwxrwxr-x &nbsp=
+;4 wayne wayne 4096 Aug &nbsp;9 11:23 calico/ </code><br><code>drwxrwxr-x &=
+nbsp;7 wayne wayne 4096 Aug &nbsp;9 11:23 consul/ </code><br><code>drwxrwxr=
+-x &nbsp;2 wayne wayne 4096 Aug &nbsp;9 11:23 headlamp/ </code><br><code>dr=
+wxrwxr-x &nbsp;3 wayne wayne 4096 Aug &nbsp;9 11:23 hello-kubernetes/ </cod=
+e><br><code>drwxrwxr-x &nbsp;4 wayne wayne 4096 Aug &nbsp;9 11:23 mongodb/ =
+</code><br><code>drwxrwxr-x &nbsp;4 wayne wayne 4096 Aug &nbsp;9 11:23 ngin=
+x/ </code><br><code>drwxrwxr-x &nbsp;4 wayne wayne 4096 Aug &nbsp;9 11:23 v=
+ault/</code><br><br></p>
+<p></p>
+<p><code>wayne@dev-dr-bastion:~/charts$ cd argocd/ </code><br><code>wayne@d=
+ev-dr-bastion:~/charts/argocd$ ll </code><br><code>total 148 </code><br><co=
+de>drwxrwxr-x &nbsp;2 wayne wayne &nbsp;&nbsp;4096 Aug &nbsp;9 11:23 ./ </c=
+ode><br><code>drwxrwxr-x 10 wayne wayne &nbsp;&nbsp;4096 Aug &nbsp;9 11:23 =
+../ </code><br><code>-rw-rw-r-- &nbsp;1 wayne wayne 136926 Aug &nbsp;9 11:2=
+3 installArgo.yaml </code><br><code>-rw-rw-r-- &nbsp;1 wayne wayne &nbsp;&n=
+bsp;1517 Aug &nbsp;9 11:23 miniKube-Install.ReadMe</code><br><br></p>
+<p>kubectl create -f installArgo.yaml </p>
+<p>customresourcedefinition.apiextensions.k8s.io/applications.argoproj.io c=
+reated</p>
+<p>customresourcedefinition.apiextensions.k8s.io/appprojects.argoproj.io cr=
+eated</p>
+<p>serviceaccount/argocd-application-controller created</p>
+<p>serviceaccount/argocd-dex-server created</p>
+<p>serviceaccount/argocd-redis created</p>
+<p>serviceaccount/argocd-server created</p>
+<p>role.rbac.authorization.k8s.io/argocd-application-controller created</p>
+<p>role.rbac.authorization.k8s.io/argocd-dex-server created</p>
+<p>role.rbac.authorization.k8s.io/argocd-redis created</p>
+<p>role.rbac.authorization.k8s.io/argocd-server created</p>
+<p>clusterrole.rbac.authorization.k8s.io/argocd-application-controller crea=
+ted</p>
+<p>clusterrole.rbac.authorization.k8s.io/argocd-server created</p>
+<p>rolebinding.rbac.authorization.k8s.io/argocd-application-controller crea=
+ted</p>
+<p>rolebinding.rbac.authorization.k8s.io/argocd-dex-server created</p>
+<p>rolebinding.rbac.authorization.k8s.io/argocd-redis created</p>
+<p>rolebinding.rbac.authorization.k8s.io/argocd-server created</p>
+<p>clusterrolebinding.rbac.authorization.k8s.io/argocd-application-controll=
+er created</p>
+<p>clusterrolebinding.rbac.authorization.k8s.io/argocd-server created</p>
+<p>configmap/argocd-cm created</p>
+<p>configmap/argocd-gpg-keys-cm created</p>
+<p></p>
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D+DELTE =3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D</p>
+<p><code>wayne@dev-dr-bastion:~/charts/argocd$ kubectl delete -f installArg=
+o.yaml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><co=
+de>customresourcedefinition.apiextensions.k8s.io "applications.argoproj.io"=
+ deleted </code><br><code>customresourcedefinition.apiextensions.k8s.io "ap=
+pprojects.argoproj.io" deleted </code><br><code>serviceaccount "argocd-appl=
+ication-controller" deleted </code><br><code>serviceaccount "argocd-dex-ser=
+ver" deleted </code><br><code>serviceaccount "argocd-redis" deleted </code>=
+<br><code>serviceaccount "argocd-server" deleted </code><br><code>role.rbac=
+.authorization.k8s.io "argocd-application-controller" deleted </code><br><c=
+ode>role.rbac.authorization.k8s.io "argocd-dex-server" deleted </code><br><=
+code>role.rbac.authorization.k8s.io "argocd-redis" deleted </code><br><code=
+>role.rbac.authorization.k8s.io "argocd-server" deleted </code><br><code>cl=
+usterrole.rbac.authorization.k8s.io "argocd-application-controller" deleted=
+ </code><br><code>clusterrole.rbac.authorization.k8s.io "argocd-server" del=
+eted </code><br><code>rolebinding.rbac.authorization.k8s.io "argocd-applica=
+tion-controller" deleted </code><br><code>rolebinding.rbac.authorization.k8=
+s.io "argocd-dex-server" deleted </code><br><code>rolebinding.rbac.authoriz=
+ation.k8s.io "argocd-redis" deleted </code><br><code>rolebinding.rbac.autho=
+rization.k8s.io "argocd-server" deleted </code><br><code>clusterrolebinding=
+.rbac.authorization.k8s.io "argocd-application-controller" deleted </code><=
+br><code>clusterrolebinding.rbac.authorization.k8s.io "argocd-server" delet=
+ed </code><br><code>configmap "argocd-cm" deleted </code><br><code>configma=
+p "argocd-gpg-keys-cm" deleted </code><br><code>configmap "argocd-rbac-cm" =
+deleted </code><br><code>configmap "argocd-ssh-known-hosts-cm" deleted </co=
+de><br><code>configmap "argocd-tls-certs-cm" deleted </code><br><code>secre=
+t "argocd-secret" deleted </code><br><code>service "argocd-dex-server" dele=
+ted </code><br><code>service "argocd-metrics" deleted </code><br><code>serv=
+ice "argocd-redis" deleted </code><br><code>service "argocd-repo-server" de=
+leted </code><br><code>service "argocd-server" deleted </code><br><code>ser=
+vice "argocd-server-metrics" deleted </code><br><code>deployment.apps "argo=
+cd-dex-server" deleted </code><br><code>deployment.apps "argocd-redis" dele=
+ted </code><br><code>deployment.apps "argocd-repo-server" deleted </code><b=
+r><code>deployment.apps "argocd-server" deleted </code><br><code>statefulse=
+t.apps "argocd-application-controller" deleted </code><br><code>networkpoli=
+cy.networking.k8s.io "argocd-application-controller-network-policy" deleted=
+ </code><br><code>networkpolicy.networking.k8s.io "argocd-dex-server-networ=
+k-policy" deleted </code><br><code>networkpolicy.networking.k8s.io "argocd-=
+redis-network-policy" deleted </code><br><code>networkpolicy.networking.k8s=
+.io "argocd-repo-server-network-policy" deleted </code><br><code>networkpol=
+icy.networking.k8s.io "argocd-server-network-policy" deleted</code><br><br>=
+=3D=3D=3D=3D=3D=3D=3D OOOPS</p>
+<p></p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_30_1420926921.1647507313741--

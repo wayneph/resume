@@ -7,10 +7,10 @@ use function GuzzleHttp\Psr7\_parse_message;
 
 class BL
 {
-    /* privates*/
+    /* privates */
     private $apiArray;
     private $myName="BL";
-    /*control vars */
+    /* control vars */
     public $pageArray;
     public $apiUserArray;
     public $infoPathArray=array();
@@ -25,17 +25,12 @@ class BL
     public function __construct(string $pageName)
     {
         $this->getEnv();
-        //$this->evalCookie();
         if(isset($_SERVER['PATH_INFO'])){
             $this->getInfoPathArray($_SERVER['PATH_INFO']);
         }
         $this->pageArray['apiVars']['getPage']=$pageName;
-        //$this->pageArray['touchForm']="loginForm";
-        //$this->pageArray['touchOptions']="Register & Login Here";
-        //$this->pageArray['authMessage']="Register or Login";
         $this->pageArray['apiCalls'][]='getPage';
         $this->pageArray['apiCalls'][]='getAllEntityTypes';
-        //$this->pageArray['apiCalls'][]='getMessages';
         /* page specifics */
         switch ($pageName) {
             case "showEntitiesForType":
@@ -45,9 +40,6 @@ class BL
                 $this->pageArray['apiCalls'][]='getEntityInfo';
                 break;
             break;
-            case "entityRelate":
-                $this->pageArray['apiCalls'][]='getEntityRelate';
-                break;
         }
         $this->pageArray['emailText']="UUM-<input name=\"pstMail\" placeholder=\"Email\" type=\"text\" value=\"###emailAddress###\">";
         $this->pageArray['email']="UUM-eMail";
@@ -77,47 +69,57 @@ class BL
         }
         return "<a href=\"$caller.php/$slug/1/$defaultSize\">No more ###entityType### Displayed</a>";;
     }
-    public function buildEntityInfoAccordion()
+    public function buildEntityInfo()
     {
         $this->trace[]="method::<b>".__METHOD__."</b>->Line::<b>".__LINE__."</b>";
         $info=$this->pageArray['information'][0]['info'];
         $outPutHtml="<!-- plGenerated::".__METHOD__."::line::".__LINE__."  -->";
-        $htmlTemplate="<p>##infoInternal##</p>\n";
+        $htmlTemplate="
+        <h3>
+            <a href=\"\" class=\"icon solid fa-code\">&nbsp;<b>##heading##</b></a>
+        </h3>
+        <p>
+            ##description##
+        </p>
+        <hr>";
         for($i=0;$i<count($info);$i++){
             $itemHtml = $htmlTemplate;
-            $infoInternal="{$info[$i]['infoCategory']}&nbsp;&rarr;&nbsp;<b>{$info[$i]['info']}</b>";
-            $itemHtml = str_replace("##infoInternal##",$infoInternal,$itemHtml);
+            $itemHtml = str_replace("##heading##",$info[$i]['infoCategory'],$itemHtml);
+            $itemHtml = str_replace("##description##",$info[$i]['info'],$itemHtml);
             $outPutHtml.=$itemHtml;
         }
-        $outPutHtml.="<a href=\"entityRelate.php/{$this->pageArray['information'][0]['slug']}\" class=\"button\">
-            See Relationships for {$this->pageArray['information'][0]['entity']}</a>";
         $outPutHtml.="\n<!--EOF(EntityInformation)-->\n";
         return $outPutHtml;
     }
-    public function buildEntityListsAccordion()
+    public function buildShowEntitiesForType()
     {
         $this->trace[]="method::<b>".__METHOD__."</b>->Line::<b>".__LINE__."</b>";
         $entitiesList=$this->pageArray['entitiesList'];
         $outPutHtml="<!-- plGenerated::".__METHOD__."::line::".__LINE__."  -->";
-        $htmlTemplate="\n<button class=\"accordion\">##heading## Information</button>\n
-        <div class=\"panel\">\n
-          <p>\n
-            <br>
-            <ul>\n
-                <li>\n
-                    See <b>Information Items</b> for &rarr; <a href=\"entityInfo.php/##slug##\">##heading##</a>\n
-                </li>
-                <li>
-                    See <b>Related Items</b> to or from &rarr; <a href=\"entityRelate.php/##slug##\">##heading##</a>\n
-                </li>\n
-            </ul>
-          </p>\n
-        </div>\n";
+        $htmlTemplate="\n
+            <h3>
+                ##href##
+            </h3>
+            ##described##\n
+            <hr>\n";
         for($i=0;$i<count($entitiesList);$i++){
+            $link="<a href=\"entityInfo.php/##slug##\" class=\"icon solid fa-info\">&nbsp;&nbsp;<b>##heading##</b></a></b>";
+            $described="";
             $itemHtml = $htmlTemplate;
+            $json=json_decode($entitiesList[$i]['fk_json'],true);
+            // echo("<br>Array:pageArray(".__LINE__."({$this->myName}))<br><pre>"); print_r($json); echo("</pre><hr>");
+            // exit();
+            if(isset($json['ignoreInfo'])){
+                $link ="<h3><span class=\"icon solid fa-check-square\">&nbsp;&nbsp;<b>##heading##</b></span></h3>";
+            }
+            if(isset($json['described'])){
+                //REQUEST_URI //$_SERVER['PATH_INFO']
+                $described ="<p>{$json['described']}</p>";
+            }
+            $itemHtml = str_replace("##href##",$link,$itemHtml);
             $itemHtml = str_replace("##heading##",$entitiesList[$i]['entity'],$itemHtml);
+            $itemHtml = str_replace("##described##",$described,$itemHtml);
             $itemHtml = str_replace("##slug##",$entitiesList[$i]['slug'],$itemHtml);
-            //$itemHtml = str_replace("##description##",$description,$itemHtml);
             $outPutHtml.=$itemHtml;
         }
         return $outPutHtml;
@@ -155,16 +157,18 @@ class BL
         $outPutHtml.="\n<!--EOF(RelatedInfo)-->\n";
         return $outPutHtml;
     }
-    public function buildEntityTypesAccordion($entityTypesArray)
+    public function buildEntityTypes()
     {
         $outPutHtml="<!-- plGenerated::".__METHOD__."::line::".__LINE__."  -->";
-        $htmlTemplate="\n<button class=\"accordion\">##heading##</button>\n
-        <div class=\"panel\">\n
-          <p>##description##\n
-          <br><br>\n
-          &nbsp;&minusb;&nbsp;<a href=\"showEntitiesForType.php/##slug##\">List Entities for <strong>##heading##(s)</strong> here</a></b>.\n
-          </p>\n
-        </div>\n";
+        $entityTypesArray=$this->pageArray['entityTypes'];
+        $htmlTemplate="
+            <h3>
+                <a href=\"showEntitiesForType.php/##slug##\" class=\"icon solid fa-bars\">&nbsp;&nbsp;<b>##heading##</b></a></b>
+            </h3>
+            <p>
+                ##description##
+            <p>
+            <hr>";
         for($i=0;$i<count($entityTypesArray);$i++){
             $itemHtml = $htmlTemplate;
             $itemHtml = str_replace("##heading##",$entityTypesArray[$i]['selector'],$itemHtml);
@@ -849,7 +853,7 @@ class BL
         $this->writeLogs($method,$type); // 1 = Unique Log
         //domain
         $domain=getenv('domain');
-        $url="$domain/inconsistency.php";
+        $url="$domain/index.php";
         header("Location: $url",301);
         exit();
     }

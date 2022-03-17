@@ -1,0 +1,471 @@
+Date: Thu, 17 Mar 2022 08:24:41 +0000 (UTC)
+Message-ID: <391387929.3.1647505481938@70134d001b6d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_2_233138890.1647505481937"
+
+------=_Part_2_233138890.1647505481937
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>K8S Cluster Scanning Tools</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>K8S Cluster Scanning Tools</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"4361b2c4-dd25-4a49-9685-98d=
+43a0917d3" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 255.0px;">
+<col style=3D"width: 509.0px;">
+<col style=3D"width: 1033.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td data-highlight-colour=3D"#9fc5e8" colspan=3D"3" class=3D"confluenceTd">=
+<p style=3D"text-align: center;"><strong>Security &amp; Risk Assessment</st=
+rong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Tool Name</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Website</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Kube-bench</p><p><span style=3D"color: rgb(25=
+5,86,48);">Selected for testing</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/aquasecurity/ku=
+be-bench" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"no=
+follow">https://github.com/aquasecurity/kube-bench</a> </p></td>
+<td class=3D"confluenceTd"><p>Runs a series of benchmark tests based on gui=
+dlines for K8S Security from the Center of Internet Security (CIS)</p><p><s=
+pan style=3D"color: rgb(255,86,48);"><u>Eval</u>::Online Docs say usage wit=
+h kube-scan should cover all bases.</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Kube-hunter</p><p><span style=3D"color: rgb(2=
+55,86,48);">Possible</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/aquasecurity/ku=
+be-hunter" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"n=
+ofollow">https://github.com/aquasecurity/kube-hunter</a> </p></td>
+<td class=3D"confluenceTd"><p>Scan Kubernetes clusters and pods for additio=
+nal weaknesses outside of the CIS database.</p><p><span style=3D"color: rgb=
+(255,86,48);"><u>Eval</u>::May want to evaluate id kube-sacn does not cover=
+ weaknesses outside of the CIS</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Kube-score</p><p><span style=3D"color: rgb(25=
+5,86,48);">In-use (Builds)</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/zegl/kube-score=
+" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">=
+https://github.com/zegl/kube-score</a> </p></td>
+<td class=3D"confluenceTd"><p>Performs a static code analysis of Kubernetes=
+ definitions, checking them against many security controls each of which ca=
+n be enabled or disabled.</p><p><span style=3D"color: rgb(255,86,48);"><u>E=
+val</u>::In Use already on builds</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Kubeaudit</p><p><span style=3D"color: rgb(255=
+,86,48);">Covered in selected tools</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/Shopify/kubeaud=
+it" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow=
+">https://github.com/Shopify/kubeaudit</a> </p></td>
+<td class=3D"confluenceTd"><p>Kubeaudit tests are called "auditors" and can=
+ be run together or independently. At the time of this writing, kubeaudit e=
+mploys 14 auditors to assess whether containers allow privilege escalation,=
+ whether pods have insecure default settings, and whether containers withou=
+t AppArmor are enabled, among other security settings.</p><p><span style=3D=
+"color: rgb(255,86,48);"><u>Eval</u>::Seems difficult to see if akk the aud=
+itors are functional. Many issues on blogs.</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Kube-Scan</p><p><span style=3D"color: rgb(255=
+,86,48);">Selected for testing</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/octarinesec/kub=
+e-scan" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofo=
+llow">https://github.com/octarinesec/kube-scan</a> </p></td>
+<td class=3D"confluenceTd"><p>A risk assessment tool for Kubernetes. It sca=
+ns Kubernetes clusters and responds with a simple number risk for each work=
+load=E2=80=940 being low risk and 10 being high risk</p><p><span style=3D"c=
+olor: rgb(255,86,48);"><u>Eval</u>::Online Docs say usage with kube-bench s=
+hould cover all bases.</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Checkov</p><p><span style=3D"color: rgb(255,8=
+6,48);">Not Appropriate - Cloud tool</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://www.checkov.io/" data-card=
+-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://www=
+.checkov.io/</a> </p></td>
+<td class=3D"confluenceTd"><p>A security tool used to prevent cloud misconf=
+igurations during build time for Kubernetes, Terraform, Cloudformation, Ser=
+verless framework, and other infrastructure-as-code-languages. It is writte=
+n in Python and aims to increase security adoption and best practices compl=
+iance.</p><p><span style=3D"color: rgb(255,86,48);">Eval::Cloud tool</span>=
+</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Trivy (Added by Wyne)</p><p><span style=3D"co=
+lor: rgb(255,86,48);">Selected for testing</span></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://k21academy.com/docker-kube=
+rnetes/docker-image-vulnerabilities/" data-card-appearance=3D"inline" class=
+=3D"external-link" rel=3D"nofollow">https://k21academy.com/docker-kubernete=
+s/docker-image-vulnerabilities/</a> </p><p><a href=3D"https://www.aquasec.c=
+om/products/trivy/" data-card-appearance=3D"inline" class=3D"external-link"=
+ rel=3D"nofollow">https://www.aquasec.com/products/trivy/</a> </p></td>
+<td class=3D"confluenceTd"><p>Specifically to regularly scan docker images =
+(GCP - dependency) .. <span style=3D"color: rgb(191,38,0);">Not sure of con=
+tainerd</span></p><p><span style=3D"color: rgb(255,86,48);">Eval::Scannif o=
+f container images - </span></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#9fc5e8" colspan=3D"3" class=3D"confluenceTd">=
+<p style=3D"text-align: center;"><strong>Analytics</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Tool Name</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Website</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>kube-opex-analytics</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://realopinsight.com/blog/891=
+_kubernetes-opex-analytics/" data-card-appearance=3D"inline" class=3D"exter=
+nal-link" rel=3D"nofollow">https://realopinsight.com/blog/891_kubernetes-op=
+ex-analytics/</a> </p></td>
+<td class=3D"confluenceTd"><p>Cost allocation and capacy analytics tool</p>=
+</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Kube-cost</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://www.kubecost.com/" data-ca=
+rd-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://w=
+ww.kubecost.com/</a> </p></td>
+<td class=3D"confluenceTd"><p>Cost allocation and capacy analytics tool wit=
+h additional features and support than kube-opex-analytics</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#9fc5e8" colspan=3D"3" class=3D"confluenceTd">=
+<p style=3D"text-align: center;"><strong>Best Practices</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Tool Name</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Website</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Popeye</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/derailed/popeye=
+" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">=
+https://github.com/derailed/popeye</a> </p></td>
+<td class=3D"confluenceTd"><p>Popeye is a utility that scans live Kubernete=
+s cluster and reports potential issues with deployed resources and configur=
+ations.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Polaris</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://www.cncf.io/blog/2021/07/0=
+1/what-is-fairwinds-polaris-kubernetes-open-source-configuration-validation=
+/" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow"=
+>https://www.cncf.io/blog/2021/07/01/what-is-fairwinds-polaris-kubernetes-o=
+pen-source-configuration-validation/</a> </p></td>
+<td class=3D"confluenceTd"><p>Validation of best practices of K8S clusters.=
+ Creates a health report card similar to Popeye</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>goldilocks</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/FairwindsOps/go=
+ldilocks" data-card-appearance=3D"inline" class=3D"external-link" rel=3D"no=
+follow">https://github.com/FairwindsOps/goldilocks</a> </p></td>
+<td class=3D"confluenceTd"><p>Creates baselines for vertical pod autoscalin=
+g. Starting point for resource requests and limits</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#9fc5e8" colspan=3D"3" class=3D"confluenceTd">=
+<p style=3D"text-align: center;"><strong>Observability | Accessibility</str=
+ong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Tool Name</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Website</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>K9S</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://github.com/derailed/k9s" d=
+ata-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">htt=
+ps://github.com/derailed/k9s</a> </p></td>
+<td class=3D"confluenceTd"><p>K9s provides a terminal UI to interact with y=
+our Kubernetes clusters. The aim of this project is to make it easier to na=
+vigate, observe and manage your applications in the wild. K9s continually w=
+atches Kubernetes for changes and offers subsequent commands to interact wi=
+th your observed resources.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#9fc5e8" colspan=3D"3" class=3D"confluenceTd">=
+<p style=3D"text-align: center;"><strong>Load Testing</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Tool Name</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Website</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>K6S</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://k6.io/" data-card-appearan=
+ce=3D"inline" class=3D"external-link" rel=3D"nofollow">https://k6.io/</a> <=
+/p></td>
+<td class=3D"confluenceTd"><p>Open source testing tool integrated with Graf=
+ana Labs</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_2_233138890.1647505481937--
