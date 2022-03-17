@@ -1,4 +1,4 @@
-# Progressive Web Apps main code repo for a RESUME #
+# Progressive Web App main code repo for a RESUME #
 
 ## Steps to create a PWA (Progressive Web App) like this ##
 0. Download or checkOut this repo:
@@ -18,7 +18,7 @@ you will get this from me  at wayne.h.philip@protonmail.com
 ### Access the back end on https://skunks.co  specifically in your OWN INVOCATION    ###
 ### Access the API at https://api.skunks.co  specifically in your OWN INVOCATION    ###
 ## you should create your own styles & images etc.##
-    **-/code/assets-**
+    /code/assets
 
 ### Once you have access to the API you may use standard tools such as **-Insomnia-** to test and interact with the API ###
 # this Repo I set up for use in a DOCKER COMPOSE paradigm. ##
