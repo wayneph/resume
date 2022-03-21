@@ -21,5 +21,5 @@ you will get this from me  at wayne.h.philip@protonmail.com
     /code/assets
 
 ### Once you have access to the API you may use standard tools such as **-Insomnia-** to test and interact with the API ###
-# this Repo I set up for use in a DOCKER COMPOSE paradigm. ##
-the /docker-compose.yml file contains all that is required for this.
+### this Repo I set up for use in a DOCKER COMPOSE paradigm. ##
+The /docker-compose.yml file contains all that is required for this.
