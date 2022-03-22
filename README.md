@@ -4,10 +4,10 @@
 0. Download or checkOut this repo:
 1. Get access to https://skunks.co from wayne.h.philip@protonmail.com with Subject as : **_skunksMainAccessPlease_**
     -I will contact you and you will have access to the **-API-** & **-back Office Application-**
-    -I will also create a subdomain for you say **-jane-doe.skunks.co-** if you want one
-2. create a **.env** with variables like in the -**env.example.txt-** file under the <b>code</b> folder
+    -I will also create a subdomain for you say **-jane-doe.skunks.co-** if you want one ..  Also Secure FTP access
+2. create a -.env- file with variables like in the -env.example- file under the code folder
 ## You need to edit these files ##
-0. code/-.env- {create from example.env.txt}
+0. code/-.env- {create from example.env}
 1. code/-manifest.json
 2. code/-package*.*
 3. code/-pwabuilder-sw.js
