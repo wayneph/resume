@@ -3,12 +3,7 @@
         <div class="container">
             <nav id="nav">
                 <ul>
-                    <li><a class="icon solid fa-home" href="index.php"><span>Introduction&rarr;Wayne</span></a></li>
-                    <li><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/wayne-h-philip/" target="_blank"><span>Biography</span></a></li>
-                    <li>
-                        ###softMenu###
-                    </li>
-                    <li><a class="icon solid fa-cog" href="pwaInstruct.php"><span>Get this as App</span></a></li>
+                    ###menu###
                 </ul>
             </nav>
         </div>
@@ -28,8 +23,8 @@
             <div id="content">
                     <article class="box post">
                         ###text00###
+                        <br>
                         ###text01###
-                        ###footText###
                     </article>
 
             </div>
@@ -50,6 +45,22 @@
     </section>
 </div>
 <!-- Scripts -->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+    });
+  }
+  ###scriptAdded###
+  </script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.dropotron.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
